@@ -1,7 +1,8 @@
-import episodes from "../../content/episodes.json" assert { type: "json" };
+// api/feed/source.js  (CommonJS)
+const episodes = require("../../content/episodes.json");
 
-export default async function handler(req, res) {
-  const items = episodes.map(ep => `
+module.exports = async (req, res) => {
+  const items = episodes.map((ep) => `
     <item>
       <title><![CDATA[${ep.title}]]></title>
       <description><![CDATA[${ep.descriptionHtml}]]></description>
@@ -28,4 +29,4 @@ export default async function handler(req, res) {
 
   res.setHeader("Content-Type", "application/rss+xml; charset=utf-8");
   res.status(200).send(xml);
-}
+};
