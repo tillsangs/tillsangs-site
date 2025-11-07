@@ -1,0 +1,16 @@
+[
+  {
+    "id": "2025-11-01-ts-ep01",
+    "title": "Avsnitt 1 – Test",
+    "slug": "avsnitt-1",
+    "published": "2025-11-01T08:00:00Z",
+    "descriptionHtml": "<p>Testavsnitt för att verifiera flödet.</p>",
+    "audio": {
+      "private_mp3": "https://cdn.tillsangs.se/audio/2025-11-01-ep01-full.mp3",
+      "public_mp3":  "https://cdn.tillsangs.se/audio/2025-11-01-ep01-teaser.mp3",
+      "duration": 1800,
+      "bytes": 40000000
+    },
+    "image": "https://cdn.tillsangs.se/covers/ep01.jpg"
+  }
+]
