@@ -1,15 +1,13 @@
-import { getMemberByToken } from "../store.js";
-import episodes from "../../content/episodes.json" assert { type: "json" };
+// api/feed/[token].js  (CommonJS)
+const { getMemberByToken } = require("../store.js");
+const episodes = require("../../content/episodes.json");
 
-// Denna fil ger ut en privat RSS-feed till aktiva medlemmar.
-// Exempel på URL: https://tillsangs-site.vercel.app/api/feed/ABC123.xml
-export default async function handler(req, res) {
+module.exports = async (req, res) => {
   const { token } = req.query;
   const member = await getMemberByToken(token);
-  if (!member || !member.active) return res.status(403).end("Forbidden");
+  if (!member || !member.active) return res.status(403).send("Forbidden");
 
-  // Bygger RSS-flödet baserat på avsnitten i episodes.json
-  const items = episodes.map(ep => `
+  const items = episodes.map((ep) => `
     <item>
       <title><![CDATA[${ep.title}]]></title>
       <description><![CDATA[${ep.descriptionHtml}]]></description>
@@ -21,7 +19,6 @@ export default async function handler(req, res) {
     </item>
   `).join("");
 
-  // Hela RSS-flödet
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
   <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
     <channel>
@@ -37,4 +34,4 @@ export default async function handler(req, res) {
 
   res.setHeader("Content-Type", "application/rss+xml; charset=utf-8");
   res.status(200).send(xml);
-}
+};
