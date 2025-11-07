@@ -250,5 +250,13 @@
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+      <script>
+  // Öppna ALLA länkar som går till Memberful i ny flik
+  document.querySelectorAll('a[href^="https://tillsangs.memberful.com"]').forEach(a => {
+    a.target = "_blank";
+    a.rel = "noopener";
+  });
+</script>
+
   </body>
 </html>
