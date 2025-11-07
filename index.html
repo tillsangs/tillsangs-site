@@ -21,7 +21,20 @@
       p,li{font-family:Georgia,serif;}
     </style>
   </head>
-  <body class="text-gray-900">
+  <body class="text-gray-900"> 
+      <body class="text-gray-900">
+
+    <script>
+      const password = prompt("Skriv lösenord för att komma in:");
+      if (password !== "Bajen123!") {
+        document.write("<h1>Under uppbyggnad</h1>");
+        throw new Error("Fel lösenord");
+      }
+    </script>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-40 border-b border-gray-100 bg-white/80 backdrop-blur">
+
     <!-- Header -->
     <header class="sticky top-0 z-40 border-b border-gray-100 bg-white/80 backdrop-blur">
       <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
