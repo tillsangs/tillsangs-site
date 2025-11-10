@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Georgia:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <meta property="og:title" content="Till Sängs – Medlemskap" />
-     <meta property="og:title" content="Till Sängs – Medlemskap" />
   <meta property="og:description" content="Lyssna i full längd utan reklam. 49 kr/mån, ingen bindningstid." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://www.tillsangs.se/cover.jpg" />
@@ -312,26 +311,7 @@
         a.rel = "noopener";
       });
     </script>
-    <!-- Toggle för mobilmenyn -->
-<script>
-  const mmBtn  = document.getElementById('mobile-menu-toggle');
-  const mmMenu = document.getElementById('mobile-menu');
-
-  if (mmBtn && mmMenu) {
-    mmBtn.additionDone = true; // undvik dubbelbindning vid hot-reload
-    mmBtn.addEventListener('click', () => {
-      mmMenu.classList.toggle('hidden');
-    });
-    // Stäng menyn när man klickar en länk i menyn
-    mmMenu.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => mmMenu.classList.add('hidden'));
-    });
-    // Stäng vid ESC
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') mmMenu.classList.add('hidden');
-    });
-  }
-</script>
+    
     <!-- Toggle för mobilmenyn: öppna/stäng, stäng på länk/utanför/Escape -->
 <script>
   (function () {
