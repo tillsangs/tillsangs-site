@@ -1,16 +1,16 @@
 [
   {
-    "id": "2025-11-01-ts-ep01",
-    "title": "Avsnitt 1 – Test",
+    "id": "2025-11-10-test",
+    "title": "Avsnitt 1 – Test för Spotify",
     "slug": "avsnitt-1",
-    "published": "2025-11-01T08:00:00Z",
-    "descriptionHtml": "<p>Testavsnitt för att verifiera flödet.</p>",
+    "published": "2025-11-10T08:00:00Z",
+    "descriptionHtml": "<p>Ett kort testljud för att verifiera Spotify-flödet.</p>",
     "audio": {
-      "private_mp3": "https://cdn.tillsangs.se/audio/2025-11-01-ep01-full.mp3",
-      "public_mp3":  "https://cdn.tillsangs.se/audio/2025-11-01-ep01-teaser.mp3",
-      "duration": 1800,
-      "bytes": 40000000
+      "private_mp3": "https://tillsangs-site.vercel.app/speechgen0776.mp3",
+      "public_mp3":  "https://tillsangs-site.vercel.app/speechgen0776.mp3",
+      "duration": 30,
+      "bytes": 2050000
     },
-    "image": "https://cdn.tillsangs.se/covers/ep01.jpg"
+    "image": "https://www.tillsangs.se/cover.jpg"
   }
 ]
