@@ -55,59 +55,52 @@
 </script>
 
 
-    <!-- Header -->
-    <header class="sticky top-0 z-40 border-b border-gray-100 bg-white/80 backdrop-blur">
-      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        <a href="#" class="flex items-center gap-3 font-semibold">
-         <img src="cover.jpg"
-     alt="Till Sängs omslag"
-     class="h-9 w-9 rounded-xl object-cover border border-gray-200 shadow-sm">
+   <!-- Header -->
+<header class="sticky top-0 z-40 border-b border-gray-100 bg-white/80 backdrop-blur">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 relative">
+    <a href="#" class="flex items-center gap-3 font-semibold">
+      <img src="cover.jpg" alt="Till Sängs omslag" class="h-9 w-9 rounded-xl object-cover border border-gray-200 shadow-sm">
+      <span class="text-gray-900">Till Sängs</span>
+    </a>
 
-          <span class="text-gray-900">Till Sängs</span>
+    <!-- Desktop-nav -->
+    <nav class="hidden items-center gap-6 text-sm md:flex">
+      <a href="#kom-igang" class="hover:text-gray-900 text-gray-600">Kom igång</a>
+      <a href="#sa-funkar-det" class="hover:text-gray-900 text-gray-600">Så funkar det</a>
+      <a href="#faq" class="hover:text-gray-900 text-gray-600">Frågor</a>
+      <a href="#kontakt" class="hover:text-gray-900 text-gray-600">Kontakt</a>
+
+      <a href="https://tillsangs.memberful.com/account" target="_blank" rel="noopener"
+         class="rounded-full border border-gray-200 px-4 py-2 font-semibold hover:bg-gray-50">Mitt medlemskap</a>
+
+      <a href="https://tillsangs.memberful.com/checkout?plan=141108" target="_blank" rel="noopener"
+         class="rounded-full bg-[var(--brand)] px-4 py-2 font-semibold text-white hover:bg-black">Bli medlem</a>
+    </nav>
+
+    <!-- Mobilmeny-knapp -->
+    <button id="mobile-menu-toggle"
+            class="md:hidden rounded-lg border border-gray-200 px-3 py-2 text-sm font-semibold">
+      ☰
+    </button>
+
+    <!-- Mobilmeny (positionerad ABSOLUT under headern, så den inte knuffar layouten) -->
+    <div id="mobile-menu"
+         class="hidden absolute left-0 right-0 top-full z-50 md:hidden bg-white/95 backdrop-blur border-t border-gray-200 shadow-lg">
+      <div class="mx-auto max-w-6xl px-4 py-4 flex flex-col gap-4 text-sm">
+        <a href="#kom-igang" class="hover:text-gray-900 text-gray-700">Kom igång</a>
+        <a href="#sa-funkar-det" class="hover:text-gray-900 text-gray-700">Så funkar det</a>
+        <a href="#faq" class="hover:text-gray-900 text-gray-700">Frågor</a>
+        <a href="#kontakt" class="hover:text-gray-900 text-gray-700">Kontakt</a>
+        <a href="https://tillsangs.memberful.com/account" target="_blank" rel="noopener" class="text-gray-700">Mitt medlemskap</a>
+        <a href="https://tillsangs.memberful.com/checkout?plan=141108" target="_blank" rel="noopener"
+           class="rounded-full bg-[var(--brand)] px-4 py-2 font-semibold text-white text-center hover:bg-black">
+           Bli medlem
         </a>
-        <nav class="hidden items-center gap-6 text-sm md:flex">
-          <a href="#kom-igang" class="hover:text-gray-900 text-gray-600">Kom igång</a>
-          <a href="#sa-funkar-det" class="hover:text-gray-900 text-gray-600">Så funkar det</a>
-          <a href="#faq" class="hover:text-gray-900 text-gray-600">Frågor</a>
-          <a href="#kontakt" class="hover:text-gray-900 text-gray-600">Kontakt</a>
-
-          <!-- Mitt medlemskap (direktlänk) -->
-          <a href="https://tillsangs.memberful.com/account"
-             target="_blank" rel="noopener"
-             class="rounded-full border border-gray-200 px-4 py-2 font-semibold hover:bg-gray-50">
-            Mitt medlemskap
-          </a>
-
-          <!-- Bli medlem (HEADER) -->
-          <a href="https://tillsangs.memberful.com/checkout?plan=141108"
-             target="_blank" rel="noopener"
-             class="rounded-full bg-[var(--brand)] px-4 py-2 font-semibold text-white hover:bg-black">
-            Bli medlem
-          </a>
-        </nav>
-        <!-- Mobilmeny-knapp (visas bara på små skärmar) -->
-<button id="mobile-menu-toggle"
-        class="md:hidden rounded-lg border border-gray-200 px-3 py-2 text-sm font-semibold">
-  ☰
-</button>
-
-<!-- Mobilmeny (dold som standard) -->
-<div id="mobile-menu"
-     class="hidden flex-col gap-4 mt-3 md:hidden bg-white border-t border-gray-200 py-4 px-4 text-sm rounded-xl shadow-sm">
-  <a href="#kom-igang" class="hover:text-gray-900 text-gray-600">Kom igång</a>
-  <a href="#sa-funkar-det" class="hover:text-gray-900 text-gray-600">Så funkar det</a>
-  <a href="#faq" class="hover:text-gray-900 text-gray-600">Frågor</a>
-  <a href="#kontakt" class="hover:text-gray-900 text-gray-600">Kontakt</a>
-  <a href="https://tillsangs.memberful.com/account" target="_blank" rel="noopener" class="hover:text-gray-900 text-gray-600">Mitt medlemskap</a>
-  <a href="https://tillsangs.memberful.com/checkout?plan=141108"
-     target="_blank" rel="noopener"
-     class="rounded-full bg-[var(--brand)] px-4 py-2 font-semibold text-white hover:bg-black text-center">
-     Bli medlem
-  </a>
-</div>
-
       </div>
-    </header>
+    </div>
+  </div>
+</header>
+
 
     <!-- Hero -->
     <section id="kom-igang" class="relative overflow-hidden bg-[var(--bg)]">
@@ -339,6 +332,36 @@
     });
   }
 </script>
+    <!-- Toggle för mobilmenyn: öppna/stäng, stäng på länk/utanför/Escape -->
+<script>
+  (function () {
+    const btn  = document.getElementById('mobile-menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+
+    if (!btn || !menu) return;
+
+    function openMenu()  { menu.classList.remove('hidden'); document.addEventListener('click', onDocClick); }
+    function closeMenu() { menu.classList.add('hidden');   document.removeEventListener('click', onDocClick); }
+
+    function onDocClick(e){
+      // stäng om man klickar utanför både knapp och meny
+      if (!menu.contains(e.target) && !btn.contains(e.target)) closeMenu();
+    }
+
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isHidden = menu.classList.contains('hidden');
+      isHidden ? openMenu() : closeMenu();
+    });
+
+    // stäng när man klickar en länk i menyn
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => closeMenu()));
+
+    // stäng på Escape
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
+  })();
+</script>
+
 
   </body>
 </html>
