@@ -79,6 +79,27 @@
             Bli medlem
           </a>
         </nav>
+        <!-- Mobilmeny-knapp (visas bara på små skärmar) -->
+<button id="mobile-menu-toggle"
+        class="md:hidden rounded-lg border border-gray-200 px-3 py-2 text-sm font-semibold">
+  ☰
+</button>
+
+<!-- Mobilmeny (dold som standard) -->
+<div id="mobile-menu"
+     class="hidden flex-col gap-4 mt-3 md:hidden bg-white border-t border-gray-200 py-4 px-4 text-sm rounded-xl shadow-sm">
+  <a href="#kom-igang" class="hover:text-gray-900 text-gray-600">Kom igång</a>
+  <a href="#sa-funkar-det" class="hover:text-gray-900 text-gray-600">Så funkar det</a>
+  <a href="#faq" class="hover:text-gray-900 text-gray-600">Frågor</a>
+  <a href="#kontakt" class="hover:text-gray-900 text-gray-600">Kontakt</a>
+  <a href="https://tillsangs.memberful.com/account" target="_blank" rel="noopener" class="hover:text-gray-900 text-gray-600">Mitt medlemskap</a>
+  <a href="https://tillsangs.memberful.com/checkout?plan=141108"
+     target="_blank" rel="noopener"
+     class="rounded-full bg-[var(--brand)] px-4 py-2 font-semibold text-white hover:bg-black text-center">
+     Bli medlem
+  </a>
+</div>
+
       </div>
     </header>
 
