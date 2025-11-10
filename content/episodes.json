@@ -3,7 +3,7 @@
     "id": "2025-11-10-test",
     "title": "Avsnitt 1 – Test för Spotify",
     "slug": "avsnitt-1",
-    "published": "2025-11-10T08:00:00Z",
+  "published": "2025-11-09T08:00:00Z",
     "descriptionHtml": "<p>Ett kort testljud för att verifiera Spotify-flödet.</p>",
     "audio": {
       "private_mp3": "https://tillsangs-site.vercel.app/speechgen0776.mp3",
