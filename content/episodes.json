@@ -1,16 +1,14 @@
 [
   {
-    "id": "2025-11-10-test",
-    "title": "Avsnitt 1 – Test för Spotify",
-    "slug": "avsnitt-1",
-  "published": "2025-11-09T08:00:00Z",
-    "descriptionHtml": "<p>Ett kort testljud för att verifiera Spotify-flödet.</p>",
+    "id": "tillsangs-2025-02",
+    "title": "Vespa till Malena",
+    "descriptionHtml": "<p>Ett testavsnitt för att verifiera Spotify-kopplingen via Memberful.</p>",
+    "published": "2025-11-12T08:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
     "audio": {
-      "private_mp3": "https://tillsangs-site.vercel.app/speechgen0776.mp3",
-      "public_mp3":  "https://tillsangs-site.vercel.app/speechgen0776.mp3",
-      "duration": 30,
-      "bytes": 2050000
-    },
-    "image": "https://www.tillsangs.se/cover.jpg"
+      "private_mp3": "https://www.tillsangs.se/Vespa%20till%20Malena.mp3",
+      "bytes": 24000000,
+      "duration": 180
+    }
   }
 ]
