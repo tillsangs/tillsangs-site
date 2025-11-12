@@ -1,17 +1,1 @@
-{
-  "version": 2,
-  "builds": [
-    { "src": "index.html", "use": "@vercel/static" },
-    { "src": "cookies.html", "use": "@vercel/static" },
-    { "src": "integritet.html", "use": "@vercel/static" },
-    { "src": "villkor.html", "use": "@vercel/static" },
-    { "src": "cover.jpg", "use": "@vercel/static" },
-    { "src": "public/(.*)", "use": "@vercel/static" },
-    { "src": "api/**/*.js", "use": "@vercel/node" }
-  ],
-  "routes": [
-    { "src": "^/$", "dest": "/index.html" },
-    { "src": "^/media/(.*)$", "dest": "/public/media/$1" },
-    { "src": "^/api/(.*)$", "dest": "/api/$1" }
-  ]
-}
+{}
