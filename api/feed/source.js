@@ -74,6 +74,7 @@ module.exports = async (req, res) => {
 
       <!-- Viktigt för vissa parser -->
       <atom:link href="${CHANNEL.selfFeedUrl}" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
       <itunes:type>episodic</itunes:type>
 
       <description><![CDATA[${CHANNEL.description}]]></description>
