@@ -11,7 +11,7 @@ const escAttr = (v) =>
 module.exports = async (req, res) => {
   // ---- Kanal-metadata ----
   const CHANNEL = {
-    title: "Till Sängs (Källfeed)",
+    title: "Till Sängs (medlem)",
     link: "https://www.tillsangs.se/",
     language: "sv-SE",
     description:
