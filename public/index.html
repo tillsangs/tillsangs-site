@@ -145,29 +145,43 @@
           Lyssna i valfri app (även Spotify).
         </p>
       </div>
-      <ol class="mt-10 flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
-        <li class="flex-1 text-center sm:text-left">
-          <div class="mx-auto h-10 w-10 rounded-full bg-[var(--brand)]"></div>
-          <h3 class="mt-3 text-lg font-semibold">1. Bli medlem</h3>
+
+      <!-- Steg 1–3 med små screenshots -->
+      <ol class="mt-10 grid gap-8 sm:grid-cols-3">
+        <!-- Steg 1 -->
+        <li class="flex flex-col items-center text-center sm:items-start sm:text-left">
+          <img src="/media/instruktion-1.png"
+               alt="Steg 1 – Bli medlem"
+               class="mb-3 h-40 w-auto rounded-2xl border border-gray-200 shadow-md">
+          <h3 class="text-lg font-semibold">1. Bli medlem</h3>
           <p class="mt-1 text-sm text-gray-600">
             Betala säkert via Stripe med kort, Apple Pay eller Google Pay.
           </p>
         </li>
-        <li class="flex-1 text-center sm:text-left">
-          <div class="mx-auto h-10 w-10 rounded-full bg-[var(--accent)]"></div>
-          <h3 class="mt-3 text-lg font-semibold">2. Välj app</h3>
+
+        <!-- Steg 2 -->
+        <li class="flex flex-col items-center text-center sm:items-start sm:text-left">
+          <img src="/media/instruktion-2.png"
+               alt="Steg 2 – Välj app"
+               class="mb-3 h-40 w-auto rounded-2xl border border-gray-200 shadow-md">
+          <h3 class="text-lg font-semibold">2. Välj app</h3>
           <p class="mt-1 text-sm text-gray-600">
             Du får en personlig RSS-länk för Spotify, Apple Podcasts m.fl.
           </p>
         </li>
-        <li class="flex-1 text-center sm:text-left">
-          <div class="mx-auto h-10 w-10 rounded-full bg-[var(--brand)]"></div>
-          <h3 class="mt-3 text-lg font-semibold">3. Börja lyssna</h3>
+
+        <!-- Steg 3 -->
+        <li class="flex flex-col items-center text-center sm:items-start sm:text-left">
+          <img src="/media/instruktion-3.png"
+               alt="Steg 3 – Börja lyssna"
+               class="mb-3 h-40 w-auto rounded-2xl border border-gray-200 shadow-md">
+          <h3 class="text-lg font-semibold">3. Börja lyssna</h3>
           <p class="mt-1 text-sm text-gray-600">
             Full längd, hela arkivet, inga reklamavbrott.
           </p>
         </li>
       </ol>
+
       <div class="mt-10 flex justify-center">
         <!-- Bli medlem (SÅ FUNKAR DET) -->
         <a href="https://tillsangs.memberful.com/checkout?plan=141108"
@@ -175,13 +189,6 @@
            class="rounded-full bg-[var(--brand)] px-6 py-3 text-base font-semibold text-white hover:bg-black">
           Bli medlem – 49 kr/mån
         </a>
-      </div>
-
-      <!-- Instruktionsbilder under 1–2–3 -->
-      <div class="mx-auto max-w-3xl mt-16 space-y-10">
-        <img src="/media/instruktion-1.png" alt="Steg 1 – Bli medlem" class="rounded-2xl shadow-md w-full">
-        <img src="/media/instruktion-2.png" alt="Steg 2 – Välj app" class="rounded-2xl shadow-md w-full">
-        <img src="/media/instruktion-3.png" alt="Steg 3 – Lyssna i din app" class="rounded-2xl shadow-md w-full">
       </div>
     </section>
 
@@ -254,12 +261,12 @@
             <span class="mb-2 text-2xl">🎧</span>
             <span class="text-sm font-semibold">Välj app</span>
           </a>
-          <a href="https://tillsangs.memberful.com/account/billing"
+          <a href="https://tillsangs.memberful.com/account/credit_card/edit"
              class="flex flex-col items-center rounded-2xl border border-gray-200 bg-[var(--bg)] p-6 hover:shadow-sm">
             <span class="mb-2 text-2xl">💳</span>
             <span class="text-sm font-semibold">Betalkort</span>
           </a>
-          <a href="https://tillsangs.memberful.com/account/invoices"
+          <a href="https://tillsangs.memberful.com/account/orders"
              class="flex flex-col items-center rounded-2xl border border-gray-200 bg-[var(--bg)] p-6 hover:shadow-sm">
             <span class="mb-2 text-2xl">🧾</span>
             <span class="text-sm font-semibold">Kvitton</span>
@@ -381,7 +388,7 @@
             <h3 class="text-lg font-semibold">Fakturor</h3>
             <p class="mt-2 text-sm text-gray-600">
               Behöver du kvitto? Logga in på
-              <a href="https://tillsangs.memberful.com/account/invoices" class="underline">Mitt medlemskap</a>.
+              <a href="https://tillsangs.memberful.com/account/orders" class="underline">Mitt medlemskap</a>.
             </p>
           </div>
         </div>
