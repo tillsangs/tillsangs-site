@@ -22,5 +22,65 @@
       "bytes": 0,
       "duration": 0
     }
+  },
+  {
+    "id": "tillsangs-2025-03-aktenskap-datenights",
+    "title": "EP3 – Äktenskap och datenights",
+    "descriptionHtml": "<p>I den gamla äktenskapsmodellen behövdes ingen datenight och i den nya är det ont om sex. På vilket sätt liknade Amber Heards och Johnny Depps äktenskap Strindbergs och vad har C.G. Jung att säga om dominanta kvinnor.</p>",
+    "published": "2025-11-08T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/5s2bygov0ixhup4ten5gf/ktenskap-och-datenights.mp3?rlkey=j3ihqkxw2vgk7njraj6xb6e32&st=cvp0m4hm&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-04-krisernas-kris",
+    "title": "EP4 – Krisernas kris: Dark night of the soul",
+    "descriptionHtml": "<p>Malena genomled sin mittlivskris i Venedig men varken glamouren, gondolerna eller gränderna hjälpte mot själens dunkla natt. Varför har Gina Dirawis program upprört så många skribenter och kommer Kendall Roy från tv-serien Succession någonsin att ta sig ur sin kris?</p>",
+    "published": "2025-11-09T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/2pveem9ibzgx5yl2o53i2/krisernas-kris.mp3?rlkey=xg8mkiv1vm00rockddqqw7r2r&st=y2i42w2w&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-05-den-heliga-semestern",
+    "title": "EP5 – Den heliga semestern",
+    "descriptionHtml": "<p>På vilket sätt kan semestern hela oss och varför är vissa så dåliga på att semestra? Vad händer när vi blir utkastade ur semesterns lustgård och istället fastnar i egots maktlabyrint? Samanda har tagit med sin dotter på Tjechov-pjäs som påminde om semestrarna i sommarstugan. Malena har jagat solbädd på Bamseklubben men hamnade istället i all inclusive-baren.</p>",
+    "published": "2025-11-10T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/uphpfwzlfrxyncql8ab3j/Den-heliga-semestern.mp3?rlkey=k0yyzll3c5vyclkz458dcnflw&st=1lznnrvt&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-06-erotiska-brak",
+    "title": "EP6 – Erotiska bråk",
+    "descriptionHtml": "<p>Det ikoniska skådespelarparet Elizabeth Taylor och Richard Burton älskade att bråka men de attackerade aldrig varandras svaga punkter. Bakom ett lyckat gräl finns alltid erotik menar Malena som aldrig fick lära sig att bråka hemma. Samanda däremot är uppfostrad med grälet som kärlekshandling.</p>",
+    "published": "2025-11-11T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/d0zr0oq423jrujly3uhiy/Erotiska-br-k.mp3?rlkey=m6otea8qlnki8h3x2xqyjkbnp&st=dlcsf2sx&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-07-royal-penis",
+    "title": "EP7 – Royal Penis",
+    "descriptionHtml": "<p>Malena och Samanda pratar om kunglig erektion, riddarna runt runda bordet plus breaking news: vår nya kung Charles är antagligen jungian.</p>",
+    "published": "2025-11-12T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/iimy0iyt5zldenmfzw2je/Royal-Penis.mp3?rlkey=d1k91ash3tnvjk5vxfs7pms0j&st=pb4dvgjz&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
   }
 ]
