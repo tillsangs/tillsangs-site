@@ -255,5 +255,93 @@
       "bytes": 0,
       "duration": 0
     }
+  },
+    {
+    "id": "tillsangs-2025-23-den-eleganta-mamman",
+    "title": "EP23 – Den eleganta mamman och den sårade dottern",
+    "published": "2025-11-28T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/typjdfm7xju5r55jfwk54/Den-eleganta-mamman-och-den-s-rade-dottern.mp3?rlkey=18w2ceyhrhmgjtg1q9v7ffrfb&st=dt6byscs&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-24-happy-ending",
+    "title": "EP24 – Happy ending",
+    "published": "2025-11-29T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/3c2krplt5h142vrmqshm1/Happy-ending.mp3?rlkey=yg0b0qwdq1ep2ry109q8cgx4w&st=74ymvskn&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-25-ernst-och-julgrinchen",
+    "title": "EP25 – Ernst och julgrinchen",
+    "published": "2025-11-30T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/ds83f8id8qkzr0la3lprj/Ernst-och-julgrinchen.mp3?rlkey=egv0h5nynys3yaturv67aikte&st=kje9j04u&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-26-oraklet-i-ching",
+    "title": "EP26 – Relationsråd och karriärstips från oraklet I Ching",
+    "published": "2025-12-01T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/7gyxzkiqy0lbg4s814ps1/Relationsr-d-och-karri-rstips-fr-n-oraklet-I-Ching.mp3?rlkey=0gxkpqwthj0yhm9qxgf5w0l4x&st=bmummf2c&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-27-stor-festspecial",
+    "title": "EP27 – Stor festspecial",
+    "published": "2025-12-02T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/czfufhi8tpi6ayi84adq4/Stor-festspecial.mp3?rlkey=9i5xwx49wv9cxunrkk8mp2iyr&st=ujpzsu4y&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-28-projektioner",
+    "title": "EP28 – Projektioner: så skapar vi mänskliga gudar",
+    "published": "2025-12-03T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/c6mw3j88z6blc8sf6b4yu/Projektioner-s-skapar-vi-m-nskliga-gudar.mp3?rlkey=8566e461tvnm7hikahri7caka&st=c2fl57k2&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-29-attacken-pa-nk",
+    "title": "EP29 – Attacken på NK",
+    "published": "2025-12-04T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/7dq6h98h1arh43c3999g4/Attacken-p-NK.mp3?rlkey=o88d8kqx9n7nj0igen59xmgmz&st=zkt1c458&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-30-rakor",
+    "title": "EP30 – Räkor",
+    "published": "2025-12-05T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/82i93mvvboxowpvrjubld/R-kor.mp3?rlkey=ha06396n1bj9wfacibzpdfzz1&st=xxo5ygu4&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
   }
 ]
