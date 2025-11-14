@@ -343,5 +343,115 @@
       "bytes": 0,
       "duration": 0
     }
+  },
+    {
+    "id": "tillsangs-2025-31-caverject",
+    "title": "EP31 – Caverject, slagrutor och skilsmässan som initiationsrit",
+    "published": "2025-12-06T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/t8voakmsg52fbtin5jpt6/Caverject-slagrutor-och-skillsm-ssa-som-initiationsrit.mp3?rlkey=bwuuv1gwer8ol27t45xabyss9&st=e080y48z&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-32-relationsskalp",
+    "title": "EP32 – Att ta en relationsskalp",
+    "published": "2025-12-07T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/x5s3oxm8yr4yng2hz4giz/Att-ta-en-relationsskalp.mp3?rlkey=uo4ajx4ocppgayj8touobq9d2&st=kx7aisla&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-33-weekendresans-provningar",
+    "title": "EP33 – Den romantiska weekendsresans prövningar",
+    "published": "2025-12-08T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/4sdf29nln3cktfy7qrv4a/Den-romantiska-weekendresans-pr-vningar.mp3?rlkey=w2u67everj2i9lder8vvct8od&st=n3ywc3f8&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-34-konstnarsarketypen",
+    "title": "EP34 – Konstnärsarketypen",
+    "published": "2025-12-09T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/83vgvbyv40rx8574uad5w/Konstn-rsarketypen.mp3?rlkey=zhz7w53q8ztmz9su4fddyh05w&st=ua7nc0jg&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-35-afrodites-provningar",
+    "title": "EP35 – Själslig TOPPFORM med gudinnans Afrodites prövningar",
+    "published": "2025-12-10T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/2y8fwxamlifcz7zaon0fv/Sj-lslig-TOPPFORM-med-gudinnan-Afrodites-pr-vningar.mp3?rlkey=acu0ptf90wcf3llf8c2z38teh&st=292qljrs&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-36-osexiga-attityden",
+    "title": "EP36 – Den osexiga attityden",
+    "published": "2025-12-11T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/qzt8hrxoisjb8hgsdps1y/Den-osexiga-attityden.mp3?rlkey=lzkbgj5p9rppn8lcand69f0b3&st=2lmisbg6&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-37-fattig-och-sexig",
+    "title": "EP37 – Fattig och sexig",
+    "published": "2025-12-12T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/6c6l9zthdy6fajoi7ib85/Fattis-och-sexig.mp3?rlkey=01ld0wm0c9nq7u83iutrz7xse&st=l9iq2fjw&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-38-beginners",
+    "title": "EP38 – BDSM för BEGINNERS",
+    "published": "2025-12-13T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/c983bb693jgzrhbumuhre/BDSM-f-r-BEGINNERS.mp3?rlkey=opdvpo7uf5tvurdfdpacrbdds&st=gsljvoel&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-39-keep-going",
+    "title": "EP39 – Keep going",
+    "published": "2025-12-14T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/vn1bg5xjdy6quatg6emn4/Keep-going.mp3?rlkey=kj4dn9uza7fgdgoodib83ahki&st=61vqetpe&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-40-knarka-kanslor",
+    "title": "EP40 – Knarka känslor",
+    "published": "2025-12-15T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/44e10vwrg0v8pbhhv8np8/Knarka-k-nslor.mp3?rlkey=n7l7um8khq3z7sfkvwn2lk6tk&st=z4ejrgwf&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
   }
 ]
