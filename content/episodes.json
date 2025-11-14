@@ -453,5 +453,115 @@
       "bytes": 0,
       "duration": 0
     }
+  },
+    {
+    "id": "tillsangs-2025-41-flirtskola",
+    "title": "EP41 – Flirtskola med Orfeus och Eurydike",
+    "published": "2025-12-16T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/sogltf0jvsmzyrs09jzcc/Flirtskola-med-Orfeus-och-Eurydike.mp3?rlkey=vff9l2xvdr4cljxgeagb473u8&st=sse2bjcf&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-42-vinnaren-och-tiggaren",
+    "title": "EP42 – Vinnaren och tiggaren",
+    "published": "2025-12-17T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/ykzivtgsedq2bgxwhh1hc/Vinnaren-och-tiggaren.mp3?rlkey=rgci1z8ac8o06j7p3x54ruqx3&st=fhwwrkib&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-43-kvinnomyten",
+    "title": "EP43 – Kvinnomyten",
+    "published": "2025-12-18T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/r34offpyf0e9r13uzc45u/Kvinnotmyten.mp3?rlkey=b0liz2eduqdl90jbwtji2sxlq&st=bk2wuguv&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-44-tantsnusk",
+    "title": "EP44 – Tantsnusk",
+    "published": "2025-12-19T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/50mok62i52ko7ngvd1dd3/Tantsnusk.mp3?rlkey=kz86xqvijq54olsspbu1ay2zw&st=ry8ix55o&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-45-healing-fran-haxan",
+    "title": "EP45 – Healing från häxan",
+    "published": "2025-12-20T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/ntg3astzlkevtfcacucpi/Healing-fr-n-h-xan.mp3?rlkey=5bg0e876kauqziflkcec0kqyu&st=xd7tc8wz&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-46-den-vise-mannen",
+    "title": "EP46 – Den vise mannen",
+    "published": "2025-12-21T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/ph3foi4yij786xvyqbhok/Den-vise-mannen.mp3?rlkey=2h5oapiw9h993mpfxkqiawsdh&st=h7mr3ld6&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-47-nar-lemmen-tystnar",
+    "title": "EP47 – När lemmen tystnar",
+    "published": "2025-12-22T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/ipn8n5et6hss7p4aqxyzr/N-r-lemmen-tystnar.mp3?rlkey=8eiewan0a8eye723l1r8wl9np&st=evgasulz&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-48-brunnen",
+    "title": "EP48 – Brunnen",
+    "published": "2025-12-23T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/u8lrjoni0l0shofhoyh18/Brunnen.mp3?rlkey=3tjyfzezgkrvt72artc4wi0fc&st=8c7blqtw&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-49-moon-board",
+    "title": "EP49 – Moon board",
+    "published": "2025-12-24T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/sy7medbc5xs4qzxmlq1g4/Moon-board.mp3?rlkey=ifoif9ue68pxwuzybav0m32gn&st=oam1f80c&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
+  },
+  {
+    "id": "tillsangs-2025-50-skilsmassomannen",
+    "title": "EP50 – Skilsmässomannen",
+    "published": "2025-12-25T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/h28k45jimbahf05q5o3en/Skilsm-ssomannen.mp3?rlkey=odai2o243bhi5ey68wp2xa95h&st=paxzopr2&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
   }
 ]
