@@ -563,5 +563,16 @@
       "bytes": 0,
       "duration": 0
     }
+  },
+  {
+  "id": "tillsangs-2025-51-det-sotsliskiga-egot",
+  "title": "EP51 – Det sötsliskiga egot",
+  "published": "2025-11-09T09:00:00Z",
+  "image": "https://www.tillsangs.se/cover.jpg",
+  "audio": {
+    "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/bxauipcsezef2qay1sx7k/Det-s-tsliskiga-egot.mp3?rlkey=6g8lb6226bcb29tnovlblbrgx&st=c7unsgbo&dl=1",
+    "bytes": 0,
+    "duration": 0
   }
+}
 ]
