@@ -130,8 +130,8 @@
             </a>
           </div>
         </div>
-        <div class="relative">
-          <div class="aspect-square w-full rounded-3xl border border-gray-200 bg-[url('cover.jpg')] bg-cover bg-center shadow-md"></div>
+        <div class="relative pt-4">
+          <div class="aspect-square w-full rounded-[40px] border border-gray-200 bg-[url('cover.jpg')] bg-cover bg-center shadow-md"></div>
         </div>
       </div>
     </section>
@@ -191,26 +191,16 @@
         </li>
       </ol>
 
+      <!-- Avdelare -->
+      <hr class="my-16 border-gray-200">
+
       <!-- RUBRIK SOM BRYTER AV -->
-      <h2 class="mt-20 mb-8 text-2xl font-bold text-center text-[var(--brand)]">
+      <h2 class="mt-0 mb-8 text-2xl font-bold text-center text-[var(--brand)]">
         Kom ihåg att följa podden i din app
       </h2>
 
-      <!-- Extra: Apple + Spotify med pilar -->
-      <div class="mt-4 grid gap-10 md:grid-cols-2 items-start">
-        <!-- Apple Podcasts -->
-        <div class="flex flex-col items-center text-center">
-          <img src="/media/apple-follow.jpg"
-               alt="Tryck på Följ i Apple Podcasts"
-               class="mb-6 h-96 max-w-[260px] w-auto rounded-3xl border border-gray-200 shadow-xl">
-          <h3 class="text-lg font-semibold">För dig som valt Apple Podcasts:</h3>
-          <p class="mt-2 text-sm text-gray-600">
-            Din podcast-app öppnas automatiskt. Tryck på
-            <strong>Följ</strong> eller <strong>Prenumerera</strong>
-            i rutan som dyker upp. Bilden visar hur det kan se ut i Apple Podcasts.
-          </p>
-        </div>
-
+      <!-- Extra: Spotify & Apple med pilar (Spotify först) -->
+      <div class="mt-2 grid gap-10 md:grid-cols-2 items-start">
         <!-- Spotify -->
         <div class="flex flex-col items-center text-center">
           <img src="/media/spotify-follow.jpg"
@@ -223,9 +213,22 @@
             Annars sparas inte podden på ditt Spotify-konto.
           </p>
         </div>
+
+        <!-- Apple Podcasts -->
+        <div class="flex flex-col items-center text-center">
+          <img src="/media/apple-follow.jpg"
+               alt="Tryck på Följ i Apple Podcasts"
+               class="mb-6 h-96 max-w-[260px] w-auto rounded-3xl border border-gray-200 shadow-xl">
+          <h3 class="text-lg font-semibold">För dig som valt Apple Podcasts:</h3>
+          <p class="mt-2 text-sm text-gray-600">
+            Din podcast-app öppnas automatiskt. Tryck på
+            <strong>Följ</strong> eller <strong>Prenumerera</strong>
+            i rutan som dyker upp. Bilden visar hur det kan se ut i Apple Podcasts.
+          </p>
+        </div>
       </div>
 
-      <div class="mt-10 flex justify-center">
+      <div class="mt-8 flex justify-center">
         <!-- Bli medlem (SÅ FUNKAR DET) -->
         <a href="https://tillsangs.memberful.com/checkout?plan=141108"
            target="_blank" rel="noopener"
