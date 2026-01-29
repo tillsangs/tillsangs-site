@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Till Sängs – Medlemskap</title>
-    <meta name="description" content="Lyssna på Till Sängs i full längd. Bli medlem och få tillgång till hela arkivet. 49 kr/mån, ingen bindningstid." />
+    <meta name="description" content="Nya avsnitt varannan söndag. Lyssna på Till Sängs i full längd som medlem och få tillgång till hela arkivet. 49 kr/mån, ingen bindningstid." />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <meta property="og:title" content="Till Sängs – Medlemskap" />
-    <meta property="og:description" content="Lyssna i full längd. 49 kr/mån, ingen bindningstid." />
+    <meta property="og:description" content="Nya avsnitt varannan söndag. Full längd + hela arkivet som medlem. 49 kr/mån, ingen bindningstid." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://www.tillsangs.se/cover.jpg" />
     <meta property="og:image:width" content="3000" />
@@ -35,7 +35,7 @@
 
   <body class="text-gray-900">
 
-    <!-- Lösenordslås (behålls tills sidan är lanserad) -->
+    <!-- Lösenordslås (TA BORT HELA DETTA SCRIPT VID LAUNCH) -->
     <script>
       const password = prompt("Skriv lösenord för att komma in:");
       if (password !== "Bajen123!") {
@@ -75,10 +75,10 @@
           <a href="#faq" class="hover:text-gray-900 text-gray-600">Frågor</a>
           <a href="#kontakt" class="hover:text-gray-900 text-gray-600">Kontakt</a>
 
-          <a href="https://tillsangs.memberful.com/account" target="_blank" rel="noopener"
+          <a href="https://medlem.tillsangs.se/account" target="_blank" rel="noopener"
              class="rounded-full border border-gray-200 px-4 py-2 font-semibold hover:bg-gray-50">Mitt medlemskap</a>
 
-          <a href="https://tillsangs.memberful.com/checkout?plan=141108" target="_blank" rel="noopener"
+          <a href="https://medlem.tillsangs.se/checkout?plan=141108" target="_blank" rel="noopener"
              class="rounded-full bg-[var(--brand)] px-4 py-2 font-semibold text-white hover:bg-black">Bli medlem</a>
         </nav>
 
@@ -96,8 +96,8 @@
             <a href="#sa-funkar-det" class="hover:text-gray-900 text-gray-700">Så funkar det</a>
             <a href="#faq" class="hover:text-gray-900 text-gray-700">Frågor</a>
             <a href="#kontakt" class="hover:text-gray-900 text-gray-700">Kontakt</a>
-            <a href="https://tillsangs.memberful.com/account" target="_blank" rel="noopener" class="text-gray-700">Mitt medlemskap</a>
-            <a href="https://tillsangs.memberful.com/checkout?plan=141108" target="_blank" rel="noopener"
+            <a href="https://medlem.tillsangs.se/account" target="_blank" rel="noopener" class="text-gray-700">Mitt medlemskap</a>
+            <a href="https://medlem.tillsangs.se/checkout?plan=141108" target="_blank" rel="noopener"
                class="rounded-full bg-[var(--brand)] px-4 py-2 font-semibold text-white text-center hover:bg-black">
                Bli medlem
             </a>
@@ -114,12 +114,15 @@
             Till Sängs – i full längd
           </h1>
           <p class="mt-4 text-lg text-gray-700">
-            <span class="font-semibold">Två avsnitt i månaden, 49 kr.</span>
+            <span class="font-semibold">Nya avsnitt varannan söndag. 49 kr/mån.</span>
             Full längd och hela arkivet. Ingen bindningstid.
+          </p>
+          <p class="mt-3 text-sm text-gray-600">
+            I den öppna poddfeeden släpps <strong>halva avsnitt</strong>. Som medlem får du <strong>hela avsnitt</strong> + <strong>hela arkivet</strong>.
           </p>
           <div class="mt-6 flex flex-wrap items-center gap-3">
             <!-- Bli medlem (HERO) -->
-            <a href="https://tillsangs.memberful.com/checkout?plan=141108"
+            <a href="https://medlem.tillsangs.se/checkout?plan=141108"
                target="_blank" rel="noopener"
                class="rounded-full bg-[var(--brand)] px-6 py-3 text-base font-semibold text-white hover:bg-black">
               Bli medlem – 49 kr/mån
@@ -140,13 +143,12 @@
     <section id="sa-funkar-det" class="mx-auto max-w-5xl px-4 py-16">
       <div class="mx-auto max-w-3xl">
         <p class="mt-3 text-gray-600">
-          Vi släpper två avsnitt i månaden. Medlemskap
-          <span class="whitespace-nowrap">49 kr/mån</span>, ingen bindningstid.
-          Lyssna i valfri app (även Spotify).
+          Nya avsnitt släpps <strong>varannan söndag</strong>.
+          Medlemskap <span class="whitespace-nowrap">49 kr/mån</span>, ingen bindningstid.
+          Som medlem lyssnar du i <strong>full längd</strong> och får <strong>hela arkivet</strong>.
+          I den öppna poddfeeden släpps <strong>halva avsnitt</strong>.
         </p>
       </div>
-
-      <!-- Steg 1–3 med STORA screenshots -->
 
       <!-- MOBIL-RUBRIK, syns bara <640px -->
       <h2 class="text-xl font-bold text-center mt-10 mb-2 block sm:hidden">
@@ -199,7 +201,7 @@
         Kom ihåg att följa podden i din app
       </h2>
 
-      <!-- Extra: Spotify & Apple med pilar (Spotify först) -->
+      <!-- Extra: Spotify & Apple -->
       <div class="mt-2 grid gap-10 md:grid-cols-2 items-start">
         <!-- Spotify -->
         <div class="flex flex-col items-center text-center">
@@ -230,7 +232,7 @@
 
       <div class="mt-8 flex justify-center">
         <!-- Bli medlem (SÅ FUNKAR DET) -->
-        <a href="https://tillsangs.memberful.com/checkout?plan=141108"
+        <a href="https://medlem.tillsangs.se/checkout?plan=141108"
            target="_blank" rel="noopener"
            class="rounded-full bg-[var(--brand)] px-6 py-3 text-base font-semibold text-white hover:bg-black">
           Bli medlem – 49 kr/mån
@@ -246,22 +248,22 @@
           <p class="mt-3 text-gray-600">Hantera ditt konto, betalning och lyssning.</p>
         </div>
         <div class="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
-          <a href="https://tillsangs.memberful.com/account"
+          <a href="https://medlem.tillsangs.se/account"
              class="flex flex-col items-center rounded-2xl border border-gray-200 bg-[var(--bg)] p-6 hover:shadow-sm">
             <span class="mb-2 text-2xl">🎧</span>
             <span class="text-sm font-semibold">Välj app</span>
           </a>
-          <a href="https://tillsangs.memberful.com/account/credit_card/edit"
+          <a href="https://medlem.tillsangs.se/account/credit_card/edit"
              class="flex flex-col items-center rounded-2xl border border-gray-200 bg-[var(--bg)] p-6 hover:shadow-sm">
             <span class="mb-2 text-2xl">💳</span>
             <span class="text-sm font-semibold">Betalkort</span>
           </a>
-          <a href="https://tillsangs.memberful.com/account/orders"
+          <a href="https://medlem.tillsangs.se/account/orders"
              class="flex flex-col items-center rounded-2xl border border-gray-200 bg-[var(--bg)] p-6 hover:shadow-sm">
             <span class="mb-2 text-2xl">🧾</span>
             <span class="text-sm font-semibold">Kvitton</span>
           </a>
-          <a href="https://tillsangs.memberful.com/account/subscriptions"
+          <a href="https://medlem.tillsangs.se/account/subscriptions"
              class="flex flex-col items-center rounded-2xl border border-gray-200 bg-[var(--bg)] p-6 hover:shadow-sm">
             <span class="mb-2 text-2xl">🚪</span>
             <span class="text-sm font-semibold">Avsluta</span>
@@ -276,7 +278,6 @@
         <h2 class="text-3xl font-bold tracking-tight text-[var(--brand)]">Frågor</h2>
       </div>
       <div class="mt-8 space-y-3">
-        <!-- Hur aktiverar jag? -->
         <details class="group rounded-2xl border border-gray-200 bg-white p-5">
           <summary class="flex cursor-pointer list-none items-center justify-between gap-2 text-base font-semibold">
             Hur aktiverar jag podden efter köp?
@@ -289,12 +290,11 @@
             När podden dykt upp i din app behöver du också trycka på
             <strong>Följ</strong> eller <strong>Prenumerera</strong> för att den ska sparas.
             Om du råkar stänga sidan: logga in på
-            <a href="https://tillsangs.memberful.com/account" class="underline">Mitt medlemskap</a>,
+            <a href="https://medlem.tillsangs.se/account" class="underline">Mitt medlemskap</a>,
             välj app där och följ anvisningarna igen.
           </p>
         </details>
 
-        <!-- Spotify -->
         <details class="group rounded-2xl border border-gray-200 bg-white p-5">
           <summary class="flex cursor-pointer list-none items-center justify-between gap-2 text-base font-semibold">
             Fungerar det i Spotify?
@@ -302,13 +302,12 @@
           </summary>
           <p class="mt-3 text-sm text-gray-600">
             Ja. Vi använder Spotifys Open Access. På sidan <em>”Beställningen är klar!”</em> eller via
-            <a href="https://tillsangs.memberful.com/account" class="underline">Mitt medlemskap</a>
+            <a href="https://medlem.tillsangs.se/account" class="underline">Mitt medlemskap</a>
             väljer du Spotify och kopplar ditt Spotify-konto. Därefter dyker podden upp låst till ditt konto i Spotify-appen.
             Kom ihåg att trycka på <strong>Följ/Follow</strong>-knappen under omslaget, annars sparas den inte.
           </p>
         </details>
 
-        <!-- Apple + andra appar -->
         <details class="group rounded-2xl border border-gray-200 bg-white p-5">
           <summary class="flex cursor-pointer list-none items-center justify-between gap-2 text-base font-semibold">
             Hur lyssnar jag i Apple Podcasts eller andra appar?
@@ -316,13 +315,12 @@
           </summary>
           <p class="mt-3 text-sm text-gray-600">
             Välj Apple Podcasts eller annan app på sidan <em>”Beställningen är klar!”</em> eller i
-            <a href="https://tillsangs.memberful.com/account" class="underline">Mitt medlemskap</a>.
+            <a href="https://medlem.tillsangs.se/account" class="underline">Mitt medlemskap</a>.
             Du får en personlig RSS-länk som öppnar podden i Apple, Overcast, Pocket Casts m.fl.
             När podden öppnas – tryck på <strong>Följ</strong> eller <strong>Prenumerera</strong> i appen.
           </p>
         </details>
 
-        <!-- Byta app / flera enheter -->
         <details class="group rounded-2xl border border-gray-200 bg-white p-5">
           <summary class="flex cursor-pointer list-none items-center justify-between gap-2 text-base font-semibold">
             Kan jag byta app eller lyssna på flera enheter?
@@ -331,11 +329,10 @@
           <p class="mt-3 text-sm text-gray-600">
             Ja. Du kan byta app när som helst och lyssna på flera enheter.
             Hantera detta via
-            <a href="https://tillsangs.memberful.com/account" class="underline">Mitt medlemskap</a>.
+            <a href="https://medlem.tillsangs.se/account" class="underline">Mitt medlemskap</a>.
           </p>
         </details>
 
-        <!-- Arkiv + full längd -->
         <details class="group rounded-2xl border border-gray-200 bg-white p-5">
           <summary class="flex cursor-pointer list-none items-center justify-between gap-2 text-base font-semibold">
             Får jag hela arkivet och full längd?
@@ -346,7 +343,6 @@
           </p>
         </details>
 
-        <!-- Avsluta -->
         <details class="group rounded-2xl border border-gray-200 bg-white p-5">
           <summary class="flex cursor-pointer list-none items-center justify-between gap-2 text-base font-semibold">
             Hur avslutar jag?
@@ -354,14 +350,13 @@
           </summary>
           <p class="mt-3 text-sm text-gray-600">
             Logga in på
-            <a href="https://tillsangs.memberful.com/account/subscriptions" class="underline">
+            <a href="https://medlem.tillsangs.se/account/subscriptions" class="underline">
               Mitt medlemskap → Abonnemang
             </a>
             och välj <em>Avsluta</em>. Ingen bindningstid.
           </p>
         </details>
 
-        <!-- Mejlet / kvitto -->
         <details class="group rounded-2xl border border-gray-200 bg-white p-5">
           <summary class="flex cursor-pointer list-none items-center justify-between gap-2 text-base font-semibold">
             Jag hittar inte mejlet – vad gör jag?
@@ -370,7 +365,7 @@
           <p class="mt-3 text-sm text-gray-600">
             Du får ett mejl med kvitto efter köp, men mejlet behövs inte för att aktivera podden.
             Gå bara till
-            <a href="https://tillsangs.memberful.com/account" class="underline">Mitt medlemskap</a>,
+            <a href="https://medlem.tillsangs.se/account" class="underline">Mitt medlemskap</a>,
             logga in med samma mejladress som vid betalning och välj app därifrån.
             Kolla skräppost/Kampanjer om du vill spara kvittot.
           </p>
@@ -398,7 +393,7 @@
             <h3 class="text-lg font-semibold">Fakturor</h3>
             <p class="mt-2 text-sm text-gray-600">
               Behöver du kvitto? Logga in på
-              <a href="https://tillsangs.memberful.com/account/orders" class="underline">Mitt medlemskap</a>.
+              <a href="https://medlem.tillsangs.se/account/orders" class="underline">Mitt medlemskap</a>.
             </p>
           </div>
         </div>
@@ -418,8 +413,8 @@
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
     <script>
-      // Öppna ALLA Memberful-länkar i ny flik
-      document.querySelectorAll('a[href*="tillsangs.memberful.com"]').forEach(a => {
+      // Öppna medlemslänkar i ny flik
+      document.querySelectorAll('a[href*="medlem.tillsangs.se"]').forEach(a => {
         a.target = "_blank";
         a.rel = "noopener";
       });
