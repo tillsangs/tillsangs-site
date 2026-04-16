@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="sv" class="scroll-smooth">
   <head>
@@ -7,30 +6,122 @@
     <title>Till Sängs – Medlemskap</title>
     <meta name="description" content="Nya avsnitt varannan söndag. Lyssna i full längd och få hela arkivet. 49 kr/mån, ingen bindningstid." />
 
+    <link rel="canonical" href="https://www.tillsangs.se/" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Georgia:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 
     <meta property="og:title" content="Till Sängs – Medlemskap" />
     <meta property="og:description" content="Nya avsnitt varannan söndag. Full längd + hela arkivet som medlem. 49 kr/mån, ingen bindningstid." />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.tillsangs.se/" />
     <meta property="og:image" content="https://www.tillsangs.se/cover.jpg" />
     <meta property="og:image:width" content="3000" />
     <meta property="og:image:height" content="3000" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Till Sängs – Medlemskap" />
+    <meta name="twitter:description" content="Nya avsnitt varannan söndag. Full längd + hela arkivet som medlem. 49 kr/mån, ingen bindningstid." />
     <meta name="twitter:image" content="https://www.tillsangs.se/cover.jpg" />
 
     <meta name="theme-color" content="#0F172A"/>
 
+    <!-- Strukturerad data: FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Hur aktiverar jag podden efter köp?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "När betalningen är klar kommer du till sidan 'Beställningen är klar!'. Under steg 2 – Välj app väljer du t.ex. Spotify eller Apple Podcasts och aktiverar podden på ditt konto. När podden dykt upp i din app behöver du också trycka på Följ eller Prenumerera för att den ska sparas. Om du råkar stänga sidan: logga in på Mitt medlemskap, välj app där och följ anvisningarna igen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Fungerar det i Spotify?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Vi använder Spotifys Open Access. På sidan 'Beställningen är klar!' eller via Mitt medlemskap väljer du Spotify och kopplar ditt Spotify-konto. Därefter dyker podden upp låst till ditt konto i Spotify-appen. Kom ihåg att trycka på Följ/Follow-knappen under omslaget, annars sparas den inte."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hur lyssnar jag i Apple Podcasts eller andra appar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Välj Apple Podcasts eller annan app på sidan 'Beställningen är klar!' eller i Mitt medlemskap. Du får en personlig RSS-länk som öppnar podden i Apple, Overcast, Pocket Casts m.fl. När podden öppnas – tryck på Följ eller Prenumerera i appen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan jag byta app eller lyssna på flera enheter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Du kan byta app när som helst och lyssna på flera enheter. Hantera detta via Mitt medlemskap."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Får jag hela arkivet och full längd?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Medlemskapet ger full längd och tillgång till hela arkivet."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hur avslutar jag?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Logga in på Mitt medlemskap → Abonnemang och välj Avsluta. Ingen bindningstid."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Jag hittar inte mejlet – vad gör jag?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Du får ett mejl med kvitto efter köp, men mejlet behövs inte för att aktivera podden. Gå bara till Mitt medlemskap, logga in med samma mejladress som vid betalning och välj app därifrån. Kolla skräppost/Kampanjer om du vill spara kvittot."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Strukturerad data: Podcast -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PodcastSeries",
+      "name": "Till Sängs",
+      "description": "Nya avsnitt varannan söndag. Full längd och hela arkivet för medlemmar.",
+      "url": "https://www.tillsangs.se/",
+      "image": "https://www.tillsangs.se/cover.jpg",
+      "inLanguage": "sv"
+    }
+    </script>
+
     <style>
       :root{--brand:#0F172A;--accent:#00BFA6;--bg:#FAFAF9}
       html,body{
-        font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
+        font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
         background-color:var(--bg);
       }
-      h1,h2,h3{font-family:Inter,system-ui,-apple-system;}
-      p,li{font-family:Georgia,serif;}
+      /* Liten visuell accentmarkör under större rubriker */
+      .accent-underline::after{
+        content:"";
+        display:block;
+        margin:12px auto 0;
+        width:48px;
+        height:3px;
+        border-radius:2px;
+        background-color:var(--accent);
+      }
     </style>
   </head>
 
@@ -61,11 +152,11 @@
       }
     </script>
 
-    <!-- Header -->
-    <header class="sticky top-0 z-40 border-b border-gray-100 bg-white/80 backdrop-blur">
+    <!-- Header (solid bakgrund för läsbarhet vid scroll) -->
+    <header class="sticky top-0 z-40 border-b border-gray-100 bg-white shadow-sm">
       <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 relative">
-        <a href="#" class="flex items-center gap-3 font-semibold">
-          <img src="cover.jpg" alt="Till Sängs omslag" class="h-9 w-9 rounded-xl object-cover border border-gray-200 shadow-sm">
+        <a href="/" class="flex items-center gap-3 font-semibold">
+          <img src="cover.jpg" alt="Till Sängs omslag" width="36" height="36" class="h-9 w-9 rounded-xl object-cover border border-gray-200 shadow-sm">
           <span class="text-gray-900">Till Sängs</span>
         </a>
 
@@ -85,13 +176,17 @@
 
         <!-- Mobilmeny-knapp -->
         <button id="mobile-menu-toggle"
+                type="button"
+                aria-label="Öppna meny"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
                 class="md:hidden rounded-lg border border-gray-200 px-3 py-2 text-sm font-semibold">
           ☰
         </button>
 
         <!-- Mobilmeny -->
         <div id="mobile-menu"
-             class="hidden absolute left-0 right-0 top-full z-50 md:hidden bg-white/95 backdrop-blur border-t border-gray-200 shadow-lg">
+             class="hidden absolute left-0 right-0 top-full z-50 md:hidden bg-white backdrop-blur border-t border-gray-200 shadow-lg">
           <div class="mx-auto max-w-6xl px-4 py-4 flex flex-col gap-4 text-sm">
             <a href="#kom-igang" class="hover:text-gray-900 text-gray-700">Kom igång</a>
             <a href="#sa-funkar-det" class="hover:text-gray-900 text-gray-700">Så funkar det</a>
@@ -115,14 +210,12 @@
             Till Sängs – i full längd
           </h1>
 
-          <!-- TIGHTAD INTRO (ingen duplicering) -->
           <p class="mt-4 text-lg text-gray-700">
             <span class="font-semibold">Nya avsnitt varannan söndag.</span>
             Full längd + hela arkivet för <span class="whitespace-nowrap">49 kr/mån</span>. Ingen bindningstid.
           </p>
 
           <div class="mt-6 flex flex-wrap items-center gap-3">
-            <!-- Bli medlem (HERO) -->
             <a href="https://medlem.tillsangs.se/checkout?plan=141108"
                target="_blank" rel="noopener"
                class="rounded-full bg-[var(--brand)] px-6 py-3 text-base font-semibold text-white hover:bg-black">
@@ -135,7 +228,11 @@
           </div>
         </div>
         <div class="relative pt-4">
-          <div class="aspect-square w-full rounded-[40px] border border-gray-200 bg-[url('cover.jpg')] bg-cover bg-center shadow-md"></div>
+          <img src="cover.jpg"
+               alt="Till Sängs – podcast-omslag med Malena och Samanda"
+               width="600"
+               height="600"
+               class="aspect-square w-full rounded-[40px] border border-gray-200 object-cover shadow-md">
         </div>
       </div>
     </section>
@@ -143,12 +240,11 @@
     <!-- Så funkar det -->
     <section id="sa-funkar-det" class="mx-auto max-w-5xl px-4 py-16">
 
-      <!-- NY RUBRIK SOM LEDER ÖGAT TILL BILDERNA (alla skärmar) -->
       <div class="mx-auto max-w-3xl text-center">
-        <h2 class="text-2xl sm:text-3xl font-bold text-[var(--brand)]">
+        <h2 class="accent-underline text-2xl sm:text-3xl font-bold text-[var(--brand)]">
           Så funkar det – tre steg
         </h2>
-        <p class="mt-2 text-gray-600">
+        <p class="mt-4 text-gray-600">
           1) Bli medlem · 2) Välj app · 3) Börja lyssna
         </p>
       </div>
@@ -158,8 +254,14 @@
         <li class="flex flex-col items-center text-center">
           <img src="/media/instruktion-1.png"
                alt="Steg 1 – Bli medlem"
+               width="260"
+               height="560"
+               loading="lazy"
                class="mb-6 h-96 max-w-[260px] w-auto rounded-3xl border border-gray-200 shadow-xl">
-          <h3 class="text-xl font-semibold">1. Bli medlem</h3>
+          <div class="flex items-center justify-center gap-3">
+            <span class="flex h-7 w-7 items-center justify-center rounded-full bg-[var(--accent)] text-sm font-bold text-white" aria-hidden="true">1</span>
+            <h3 class="text-xl font-semibold">Bli medlem</h3>
+          </div>
           <p class="mt-2 text-base text-gray-600">
             Betala säkert via Stripe med kort, Apple Pay eller Google Pay.
           </p>
@@ -169,8 +271,14 @@
         <li class="flex flex-col items-center text-center">
           <img src="/media/instruktion-2.png"
                alt="Steg 2 – Välj app"
+               width="260"
+               height="560"
+               loading="lazy"
                class="mb-6 h-96 max-w-[260px] w-auto rounded-3xl border border-gray-200 shadow-xl">
-          <h3 class="text-xl font-semibold">2. Välj app</h3>
+          <div class="flex items-center justify-center gap-3">
+            <span class="flex h-7 w-7 items-center justify-center rounded-full bg-[var(--accent)] text-sm font-bold text-white" aria-hidden="true">2</span>
+            <h3 class="text-xl font-semibold">Välj app</h3>
+          </div>
           <p class="mt-2 text-base text-gray-600">
             När beställningen är klar kommer du till sidan <em>”Beställningen är klar!”</em>.
             Där väljer du app (t.ex. Spotify eller Apple Podcasts) och aktiverar podden på ditt konto.
@@ -181,8 +289,14 @@
         <li class="flex flex-col items-center text-center">
           <img src="/media/instruktion-3.png"
                alt="Steg 3 – Börja lyssna"
+               width="260"
+               height="560"
+               loading="lazy"
                class="mb-6 h-96 max-w-[260px] w-auto rounded-3xl border border-gray-200 shadow-xl">
-          <h3 class="text-xl font-semibold">3. Börja lyssna</h3>
+          <div class="flex items-center justify-center gap-3">
+            <span class="flex h-7 w-7 items-center justify-center rounded-full bg-[var(--accent)] text-sm font-bold text-white" aria-hidden="true">3</span>
+            <h3 class="text-xl font-semibold">Börja lyssna</h3>
+          </div>
           <p class="mt-2 text-base text-gray-600">
             Full längd och hela arkivet.
             När podden dykt upp i din app – kom ihåg att trycka på
@@ -194,8 +308,7 @@
       <!-- Avdelare -->
       <hr class="my-16 border-gray-200">
 
-      <!-- RUBRIK SOM BRYTER AV -->
-      <h2 class="mt-0 mb-8 text-2xl font-bold text-center text-[var(--brand)]">
+      <h2 class="accent-underline mt-0 mb-10 text-2xl font-bold text-center text-[var(--brand)]">
         Kom ihåg att följa podden i din app
       </h2>
 
@@ -205,6 +318,9 @@
         <div class="flex flex-col items-center text-center">
           <img src="/media/spotify-follow.jpg"
                alt="Tryck på Följ i Spotify"
+               width="260"
+               height="560"
+               loading="lazy"
                class="mb-6 h-96 max-w-[260px] w-auto rounded-3xl border border-gray-200 shadow-xl">
           <h3 class="text-lg font-semibold">För dig som valt Spotify:</h3>
           <p class="mt-2 text-sm text-gray-600">
@@ -218,6 +334,9 @@
         <div class="flex flex-col items-center text-center">
           <img src="/media/apple-follow.jpg"
                alt="Tryck på Följ i Apple Podcasts"
+               width="260"
+               height="560"
+               loading="lazy"
                class="mb-6 h-96 max-w-[260px] w-auto rounded-3xl border border-gray-200 shadow-xl">
           <h3 class="text-lg font-semibold">För dig som valt Apple Podcasts:</h3>
           <p class="mt-2 text-sm text-gray-600">
@@ -229,7 +348,6 @@
       </div>
 
       <div class="mt-8 flex justify-center">
-        <!-- Bli medlem (SÅ FUNKAR DET) -->
         <a href="https://medlem.tillsangs.se/checkout?plan=141108"
            target="_blank" rel="noopener"
            class="rounded-full bg-[var(--brand)] px-6 py-3 text-base font-semibold text-white hover:bg-black">
@@ -242,28 +360,41 @@
     <section class="border-t border-gray-100 bg-white">
       <div class="mx-auto max-w-4xl px-4 py-16">
         <div class="text-center">
-          <h2 class="text-3xl font-bold text-[var(--brand)]">Mitt medlemskap</h2>
-          <p class="mt-3 text-gray-600">Hantera ditt konto, betalning och lyssning.</p>
+          <h2 class="accent-underline text-3xl font-bold text-[var(--brand)]">Mitt medlemskap</h2>
+          <p class="mt-4 text-gray-600">Hantera ditt konto, betalning och lyssning.</p>
         </div>
         <div class="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
           <a href="https://medlem.tillsangs.se/account"
-             class="flex flex-col items-center rounded-2xl border border-gray-200 bg-[var(--bg)] p-6 hover:shadow-sm">
-            <span class="mb-2 text-2xl">🎧</span>
+             class="flex flex-col items-center rounded-2xl border border-gray-200 bg-[var(--bg)] p-6 hover:shadow-sm hover:border-gray-300 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-[var(--accent)]" aria-hidden="true">
+              <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H4a1 1 0 0 1-1-1v-6a9 9 0 0 1 18 0v6a1 1 0 0 1-1 1h-2a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/>
+            </svg>
             <span class="text-sm font-semibold">Välj app</span>
           </a>
           <a href="https://medlem.tillsangs.se/account/credit_card/edit"
-             class="flex flex-col items-center rounded-2xl border border-gray-200 bg-[var(--bg)] p-6 hover:shadow-sm">
-            <span class="mb-2 text-2xl">💳</span>
+             class="flex flex-col items-center rounded-2xl border border-gray-200 bg-[var(--bg)] p-6 hover:shadow-sm hover:border-gray-300 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-[var(--accent)]" aria-hidden="true">
+              <rect width="20" height="14" x="2" y="5" rx="2"/>
+              <line x1="2" x2="22" y1="10" y2="10"/>
+            </svg>
             <span class="text-sm font-semibold">Betalkort</span>
           </a>
           <a href="https://medlem.tillsangs.se/account/orders"
-             class="flex flex-col items-center rounded-2xl border border-gray-200 bg-[var(--bg)] p-6 hover:shadow-sm">
-            <span class="mb-2 text-2xl">🧾</span>
+             class="flex flex-col items-center rounded-2xl border border-gray-200 bg-[var(--bg)] p-6 hover:shadow-sm hover:border-gray-300 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-[var(--accent)]" aria-hidden="true">
+              <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/>
+              <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/>
+              <path d="M12 17.5v-11"/>
+            </svg>
             <span class="text-sm font-semibold">Kvitton</span>
           </a>
           <a href="https://medlem.tillsangs.se/account/subscriptions"
-             class="flex flex-col items-center rounded-2xl border border-gray-200 bg-[var(--bg)] p-6 hover:shadow-sm">
-            <span class="mb-2 text-2xl">🚪</span>
+             class="flex flex-col items-center rounded-2xl border border-gray-200 bg-[var(--bg)] p-6 hover:shadow-sm hover:border-gray-300 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-[var(--accent)]" aria-hidden="true">
+              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+              <polyline points="16 17 21 12 16 7"/>
+              <line x1="21" x2="9" y1="12" y2="12"/>
+            </svg>
             <span class="text-sm font-semibold">Avsluta</span>
           </a>
         </div>
@@ -273,9 +404,9 @@
     <!-- FAQ -->
     <section id="faq" class="mx-auto max-w-4xl px-4 py-16">
       <div class="mx-auto max-w-2xl text-center">
-        <h2 class="text-3xl font-bold tracking-tight text-[var(--brand)]">Frågor</h2>
+        <h2 class="accent-underline text-3xl font-bold tracking-tight text-[var(--brand)]">Frågor</h2>
       </div>
-      <div class="mt-8 space-y-3">
+      <div class="mt-10 space-y-3">
         <details class="group rounded-2xl border border-gray-200 bg-white p-5">
           <summary class="flex cursor-pointer list-none items-center justify-between gap-2 text-base font-semibold">
             Hur aktiverar jag podden efter köp?
@@ -406,55 +537,51 @@
       </div>
     </section>
 
-    <!-- Små hjälpskript -->
+    <!-- Hjälpskript (konsoliderat) -->
     <script>
+      // År i footer
       document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-    <script>
+
       // Öppna medlemslänkar i ny flik
       document.querySelectorAll('a[href*="medlem.tillsangs.se"]').forEach(a => {
         a.target = "_blank";
         a.rel = "noopener";
       });
-    </script>
 
-    <!-- Toggle för mobilmenyn -->
-    <script>
+      // Mobilmeny-toggle
       (function () {
         const btn  = document.getElementById('mobile-menu-toggle');
         const menu = document.getElementById('mobile-menu');
-
         if (!btn || !menu) return;
 
-        function openMenu()  {
-          menu.classList.remove('hidden');
-          document.addEventListener('click', onDocClick);
+        function setState(open){
+          menu.classList.toggle('hidden', !open);
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+          btn.setAttribute('aria-label', open ? 'Stäng meny' : 'Öppna meny');
+          if (open) {
+            document.addEventListener('click', onDocClick);
+          } else {
+            document.removeEventListener('click', onDocClick);
+          }
         }
-        function closeMenu() {
-          menu.classList.add('hidden');
-          document.removeEventListener('click', onDocClick);
-        }
-
         function onDocClick(e){
-          if (!menu.contains(e.target) && !btn.contains(e.target)) closeMenu();
+          if (!menu.contains(e.target) && !btn.contains(e.target)) setState(false);
         }
 
         btn.addEventListener('click', (e) => {
           e.stopPropagation();
-          const isHidden = menu.classList.contains('hidden');
-          isHidden ? openMenu() : closeMenu();
+          setState(menu.classList.contains('hidden'));
         });
 
         menu.querySelectorAll('a').forEach(a =>
-          a.addEventListener('click', () => closeMenu())
+          a.addEventListener('click', () => setState(false))
         );
 
         document.addEventListener('keydown', (e) => {
-          if (e.key === 'Escape') closeMenu();
+          if (e.key === 'Escape') setState(false);
         });
       })();
     </script>
 
   </body>
 </html>
-
