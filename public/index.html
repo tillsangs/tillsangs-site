@@ -11,7 +11,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 
     <meta property="og:title" content="Till Sängs – Medlemskap" />
@@ -59,15 +59,26 @@
     </script>
 
     <style>
-      :root{--brand:#0F172A;--accent:#00BFA6;--bg:#FAFAF9}
+      :root{
+        --brand:#0F172A;
+        --accent:#9A1E2C;       /* Malena-rött */
+        --yellow:#FACC15;       /* Neongult från omslaget */
+        --bg:#FAFAF9;
+      }
       html,body{
         font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
         background-color:var(--bg);
       }
+      /* Rubriker i Fraunces – högkontrastserif som ekar omslaget */
+      h1, h2, h3 {
+        font-family:"Fraunces", Georgia, "Times New Roman", serif;
+        font-optical-sizing: auto;
+        letter-spacing: -0.01em;
+      }
 
-      /* Accentmarkör under rubriker */
+      /* Accentmarkör under rubriker – nu i Malena-rött */
       .accent-underline::after{
-        content:"";display:block;margin:12px auto 0;
+        content:"";display:block;margin:14px auto 0;
         width:48px;height:3px;border-radius:2px;
         background-color:var(--accent);
       }
@@ -86,6 +97,20 @@
         pointer-events:none;z-index:0;
       }
 
+      /* Gul markeringspenna bakom priset */
+      .yellow-mark{
+        background: linear-gradient(transparent 55%, var(--yellow) 55%, var(--yellow) 95%, transparent 95%);
+        padding: 0 4px;
+        font-weight: 600;
+      }
+
+      /* Poster-ram runt omslaget */
+      .poster-frame{
+        border: 8px solid #0A0A0A;
+        box-shadow: 0 30px 60px -15px rgba(0,0,0,0.35), 0 8px 16px rgba(0,0,0,0.15);
+        border-radius: 0;
+      }
+
       /* Scroll fade-in */
       .fade-in{
         opacity:0;transform:translateY(24px);
@@ -93,7 +118,7 @@
       }
       .fade-in.visible{opacity:1;transform:translateY(0);}
 
-      /* Hover-lyft för kort och knappar */
+      /* Hover-lyft */
       .lift{transition: transform .2s ease, box-shadow .2s ease;}
       .lift:hover{transform: translateY(-2px);}
 
@@ -134,8 +159,8 @@
     <!-- Header -->
     <header class="sticky top-0 z-40 border-b border-gray-100 bg-white shadow-sm">
       <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 relative">
-        <a href="/" class="flex items-center gap-3 font-semibold">
-          <img src="cover.jpg" alt="Till Sängs omslag" width="36" height="36" class="h-9 w-9 rounded-xl object-cover border border-gray-200 shadow-sm">
+        <a href="/" class="flex items-center gap-3 font-semibold" style="font-family:Inter">
+          <img src="cover.jpg" alt="Till Sängs omslag" width="36" height="36" class="h-9 w-9 object-cover border border-gray-200 shadow-sm">
           <span class="text-gray-900">Till Sängs</span>
         </a>
 
@@ -183,7 +208,7 @@
       <div class="relative z-10 mx-auto grid max-w-6xl items-center gap-10 px-4 pb-16 pt-12 md:grid-cols-2 md:pb-24 md:pt-20">
         <div>
           <!-- Badge -->
-          <div class="mb-5 inline-flex items-center gap-2 rounded-full bg-white/80 backdrop-blur border border-gray-200 px-3 py-1 text-xs font-semibold text-gray-700 shadow-sm">
+          <div class="mb-6 inline-flex items-center gap-2 rounded-full bg-white/80 backdrop-blur border border-gray-200 px-3 py-1 text-xs font-semibold text-gray-700 shadow-sm" style="font-family:Inter">
             <span class="relative flex h-2 w-2">
               <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--accent)] opacity-75"></span>
               <span class="relative inline-flex h-2 w-2 rounded-full bg-[var(--accent)]"></span>
@@ -191,31 +216,15 @@
             <span>Nya avsnitt varannan söndag</span>
           </div>
 
-          <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl text-[var(--brand)]">
-            Till Sängs – <span class="font-medium italic">i full längd</span>
+          <h1 class="text-5xl font-bold tracking-tight sm:text-6xl text-[var(--brand)] leading-[1.05]">
+            Till Sängs – <span class="italic font-normal">i full längd</span>
           </h1>
 
-          <p class="mt-4 text-lg text-gray-700">
-            Full längd + hela arkivet för <span class="whitespace-nowrap">49 kr/mån</span>. Ingen bindningstid.
+          <p class="mt-5 text-lg text-gray-700 leading-relaxed">
+            Full längd + hela arkivet för <span class="yellow-mark whitespace-nowrap">49 kr/mån</span>. Ingen bindningstid.
           </p>
 
-          <!-- Benefit pills -->
-          <ul class="mt-5 flex flex-wrap gap-2 text-sm">
-            <li class="inline-flex items-center gap-1.5 rounded-full bg-white/80 backdrop-blur border border-gray-200 px-3 py-1.5 text-gray-700 shadow-sm">
-              <svg class="h-4 w-4 text-[var(--accent)]" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.5 7.5a1 1 0 01-1.42 0l-3.5-3.5a1 1 0 111.42-1.42l2.79 2.79 6.79-6.79a1 1 0 011.42 0z" clip-rule="evenodd"/></svg>
-              Hela arkivet
-            </li>
-            <li class="inline-flex items-center gap-1.5 rounded-full bg-white/80 backdrop-blur border border-gray-200 px-3 py-1.5 text-gray-700 shadow-sm">
-              <svg class="h-4 w-4 text-[var(--accent)]" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.5 7.5a1 1 0 01-1.42 0l-3.5-3.5a1 1 0 111.42-1.42l2.79 2.79 6.79-6.79a1 1 0 011.42 0z" clip-rule="evenodd"/></svg>
-              Full längd
-            </li>
-            <li class="inline-flex items-center gap-1.5 rounded-full bg-white/80 backdrop-blur border border-gray-200 px-3 py-1.5 text-gray-700 shadow-sm">
-              <svg class="h-4 w-4 text-[var(--accent)]" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.5 7.5a1 1 0 01-1.42 0l-3.5-3.5a1 1 0 111.42-1.42l2.79 2.79 6.79-6.79a1 1 0 011.42 0z" clip-rule="evenodd"/></svg>
-              Spotify &amp; Apple Podcasts
-            </li>
-          </ul>
-
-          <div class="mt-7 flex flex-wrap items-center gap-3">
+          <div class="mt-8 flex flex-wrap items-center gap-3">
             <a href="https://medlem.tillsangs.se/checkout?plan=141108"
                target="_blank" rel="noopener"
                class="lift rounded-full bg-[var(--brand)] px-6 py-3 text-base font-semibold text-white shadow-lg hover:bg-black hover:shadow-xl">
@@ -232,7 +241,7 @@
                alt="Till Sängs – podcast-omslag med Malena och Samanda"
                width="600"
                height="600"
-               class="aspect-square w-full rounded-[40px] border border-gray-200 object-cover shadow-2xl">
+               class="poster-frame aspect-square w-full object-cover">
         </div>
       </div>
     </section>
@@ -241,10 +250,10 @@
     <section id="sa-funkar-det" class="mx-auto max-w-5xl px-4 py-16">
 
       <div class="fade-in mx-auto max-w-3xl text-center">
-        <h2 class="accent-underline text-2xl sm:text-3xl font-bold text-[var(--brand)]">
+        <h2 class="accent-underline text-3xl sm:text-4xl font-bold text-[var(--brand)]">
           Så funkar det – tre steg
         </h2>
-        <p class="mt-4 text-gray-600">
+        <p class="mt-5 text-gray-600">
           1) Bli medlem · 2) Välj app · 3) Börja lyssna
         </p>
       </div>
@@ -298,7 +307,7 @@
 
       <hr class="my-16 border-gray-200">
 
-      <h2 class="fade-in accent-underline mt-0 mb-10 text-2xl font-bold text-center text-[var(--brand)]">
+      <h2 class="fade-in accent-underline mt-0 mb-12 text-2xl sm:text-3xl font-bold text-center text-[var(--brand)]">
         Kom ihåg att följa podden i din app
       </h2>
 
@@ -343,8 +352,8 @@
     <section class="border-t border-gray-100 bg-white">
       <div class="mx-auto max-w-4xl px-4 py-16">
         <div class="fade-in text-center">
-          <h2 class="accent-underline text-3xl font-bold text-[var(--brand)]">Mitt medlemskap</h2>
-          <p class="mt-4 text-gray-600">Hantera ditt konto, betalning och lyssning.</p>
+          <h2 class="accent-underline text-3xl sm:text-4xl font-bold text-[var(--brand)]">Mitt medlemskap</h2>
+          <p class="mt-5 text-gray-600">Hantera ditt konto, betalning och lyssning.</p>
         </div>
         <div class="fade-in mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
           <a href="https://medlem.tillsangs.se/account"
@@ -387,7 +396,7 @@
     <!-- FAQ -->
     <section id="faq" class="mx-auto max-w-4xl px-4 py-16">
       <div class="fade-in mx-auto max-w-2xl text-center">
-        <h2 class="accent-underline text-3xl font-bold tracking-tight text-[var(--brand)]">Frågor</h2>
+        <h2 class="accent-underline text-3xl sm:text-4xl font-bold tracking-tight text-[var(--brand)]">Frågor</h2>
       </div>
       <div class="fade-in mt-10 space-y-3">
         <details class="group rounded-2xl border border-gray-200 bg-white p-5 transition hover:border-gray-300">
