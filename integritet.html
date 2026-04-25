@@ -1,30 +1,115 @@
 <!doctype html>
-<html lang="sv">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Integritetspolicy – Till Sängs</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css">
-</head>
-<body class="bg-gray-50 text-gray-800 leading-relaxed">
-  <main class="max-w-3xl mx-auto p-6">
-    <h1 class="text-3xl font-bold mb-6 text-[var(--brand)]">Integritetspolicy</h1>
+<html lang="sv" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Integritetspolicy – Till Sängs</title>
+    <meta name="description" content="Integritetspolicy för Till Sängs medlemskap." />
+    <link rel="canonical" href="https://www.tillsangs.se/integritet.html" />
+    <link rel="icon" type="image/jpeg" href="/cover.jpg" />
 
-    <p class="mb-4">Vi på <strong>Till Sängs</strong> värnar om din integritet. Denna policy beskriver hur vi hanterar personuppgifter när du blir medlem eller besöker vår webbplats.</p>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <h2 class="text-xl font-semibold mt-6 mb-2">Personuppgifter och betalning</h2>
-    <p class="mb-4">Betalningar hanteras av <strong>Stripe</strong> via <strong>Memberful</strong>. De är ansvariga för säker korthantering och följer EU:s regler för dataskydd (GDPR och PSD2). Vi har aldrig tillgång till ditt kortnummer eller din bankinformation.</p>
+    <style>
+      :root{
+        --brand:#0F172A;
+        --accent:#9A1E2C;
+        --bg:#FAFAF9;
+      }
+      html,body{
+        font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+        background-color:var(--bg);
+      }
+      h1, h2, h3 {
+        font-family:"Fraunces", Georgia, "Times New Roman", serif;
+        font-optical-sizing: auto;
+        letter-spacing: -0.01em;
+      }
+      .accent-underline::after{
+        content:"";display:block;margin:14px 0 0;
+        width:48px;height:3px;border-radius:2px;
+        background-color:var(--accent);
+      }
+    </style>
+  </head>
 
-    <h2 class="text-xl font-semibold mt-6 mb-2">Vilka uppgifter vi ser</h2>
-    <p class="mb-4">När du blir medlem ser vi endast din e-postadress och ditt medlemsstatus. Dessa uppgifter används för att kunna ge dig tillgång till podcasten och skicka eventuell medlemsinformation.</p>
+  <body class="text-gray-900">
 
-    <h2 class="text-xl font-semibold mt-6 mb-2">Lagring och radering</h2>
-    <p class="mb-4">Du kan när som helst säga upp ditt medlemskap eller begära att vi raderar din information genom att kontakta oss på <a href="mailto:tillsangs@gmail.com" class="underline">tillsangs@gmail.com</a>.</p>
+    <!-- Header -->
+    <header class="sticky top-0 z-40 border-b border-gray-100 bg-white shadow-sm">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+        <a href="/" class="flex items-center gap-3 font-semibold">
+          <img src="cover.jpg" alt="Till Sängs omslag" width="36" height="36" class="h-9 w-9 object-cover border border-gray-200 shadow-sm">
+          <span class="text-gray-900">Till Sängs</span>
+        </a>
+        <a href="/" class="text-sm text-gray-600 hover:text-gray-900">← Tillbaka</a>
+      </div>
+    </header>
 
-    <h2 class="text-xl font-semibold mt-6 mb-2">Ansvarig</h2>
-    <p>Personuppgiftsansvarig är Till Sängs / Samanda Ekman. För frågor: <a href="mailto:tillsangs@gmail.com" class="underline">tillsangs@gmail.com</a>.</p>
+    <main class="mx-auto max-w-3xl px-4 py-16">
 
-    <p class="mt-10 text-sm text-gray-500">Senast uppdaterad: November 2025</p>
-  </main>
-</body>
+      <h1 class="accent-underline text-4xl sm:text-5xl font-bold text-[var(--brand)] mb-10">
+        Integritetspolicy
+      </h1>
+
+      <div class="space-y-6 text-gray-700 leading-relaxed">
+
+        <p>
+          Vi på <strong>Till Sängs</strong> värnar om din integritet. Denna policy beskriver hur vi
+          hanterar personuppgifter när du blir medlem eller besöker vår webbplats.
+        </p>
+
+        <h2 class="text-2xl font-bold text-[var(--brand)] mt-10 mb-3">Personuppgifter och betalning</h2>
+        <p>
+          Betalningar hanteras av <strong>Stripe</strong> via <strong>Memberful</strong>.
+          De är ansvariga för säker korthantering och följer EU:s regler för dataskydd
+          (GDPR och PSD2). Vi har aldrig tillgång till ditt kortnummer eller din bankinformation.
+        </p>
+
+        <h2 class="text-2xl font-bold text-[var(--brand)] mt-10 mb-3">Vilka uppgifter vi ser</h2>
+        <p>
+          När du blir medlem ser vi endast din e-postadress och ditt medlemsstatus.
+          Dessa uppgifter används för att kunna ge dig tillgång till podcasten och
+          skicka eventuell medlemsinformation.
+        </p>
+
+        <h2 class="text-2xl font-bold text-[var(--brand)] mt-10 mb-3">Lagring och radering</h2>
+        <p>
+          Du kan när som helst säga upp ditt medlemskap eller begära att vi raderar din information
+          genom att kontakta oss på
+          <a href="mailto:hej@tillsangs.se" class="underline text-[var(--accent)]">hej@tillsangs.se</a>.
+        </p>
+
+        <h2 class="text-2xl font-bold text-[var(--brand)] mt-10 mb-3">Ansvarig</h2>
+        <p>
+          Personuppgiftsansvarig är Till Sängs / Samanda Ekman.
+          För frågor:
+          <a href="mailto:hej@tillsangs.se" class="underline text-[var(--accent)]">hej@tillsangs.se</a>.
+        </p>
+
+      </div>
+
+      <p class="mt-16 pt-8 border-t border-gray-200 text-sm text-gray-500">
+        Senast uppdaterad: april 2026.
+      </p>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-100 bg-gray-50 mt-16">
+      <div class="mx-auto max-w-6xl px-4 py-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs text-gray-500">
+        <p>© <span id="year"></span> Till Sängs</p>
+        <div class="flex gap-4">
+          <a href="integritet.html" class="hover:underline">Integritetspolicy</a>
+          <a href="cookies.html" class="hover:underline">Cookies</a>
+          <a href="villkor.html" class="hover:underline">Villkor</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
 </html>
