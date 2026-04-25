@@ -634,5 +634,17 @@
     "audio": {
       "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/jegad8lk7x1smjcrtkj1l/EP57-Frater-mysticus-Soror-mystica.mp3?rlkey=42mbokgscizd96xh3fn72j5qp&dl=1"
     }
+  },
+  {
+    "id": "ts-bonus-meditation-2026-04-25",
+    "title": "Malenas guidade meditation",
+    "descriptionHtml": "<p>Ett exklusivt bonusavsnitt för medlemmar: Malenas guidade meditation.</p>",
+    "published": "2026-04-25T21:45:00Z",
+    "image": "https://www.tillsangs.se/cover2.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/ppk6fwzcqma7xhn7tc9i5/Malenas-guidade-meditation.mp3?rlkey=80b71r5d7tv36mlduo9rzzfzi&dl=1",
+      "bytes": 0,
+      "duration": 0
+    }
   }
 ]
