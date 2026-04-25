@@ -646,5 +646,16 @@
       "bytes": 0,
       "duration": 0
     }
+  },
+  ,
+  {
+    "id": "tillsangs-2026-58-kartmanniskor",
+    "title": "EP58 – Kartmänniskor",
+    "descriptionHtml": "<p></p>",
+    "published": "2026-04-26T00:34:00Z",
+    "image": "https://www.tillsangs.se/cover2.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/nczodghdnw8lt46vpnwg1/EP58-Kartm-nniskor.mp3?rlkey=gkithvmnh29nzqwwqne460mxj&dl=1"
+    }
   }
 ]
