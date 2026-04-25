@@ -1,30 +1,113 @@
 <!doctype html>
-<html lang="sv">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Villkor – Till Sängs</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css">
-</head>
-<body class="bg-gray-50 text-gray-800 leading-relaxed">
-  <main class="max-w-3xl mx-auto p-6">
-    <h1 class="text-3xl font-bold mb-6 text-[var(--brand)]">Allmänna villkor</h1>
+<html lang="sv" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Villkor – Till Sängs</title>
+    <meta name="description" content="Allmänna villkor för medlemskap på Till Sängs." />
+    <link rel="canonical" href="https://www.tillsangs.se/villkor.html" />
+    <link rel="icon" type="image/jpeg" href="/cover.jpg" />
 
-    <p class="mb-4">Dessa villkor gäller mellan <strong>Till Sängs</strong> och dig som medlem. Genom att köpa ett medlemskap godkänner du dessa villkor.</p>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <h2 class="text-xl font-semibold mt-6 mb-2">Medlemskap och betalning</h2>
-    <p class="mb-4">Medlemskapet kostar 49 kr per månad och hanteras via Memberful/Stripe. Ingen bindningstid. Du kan säga upp när som helst och tillgången avslutas automatiskt när perioden löper ut.</p>
+    <style>
+      :root{
+        --brand:#0F172A;
+        --accent:#9A1E2C;
+        --bg:#FAFAF9;
+      }
+      html,body{
+        font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+        background-color:var(--bg);
+      }
+      h1, h2, h3 {
+        font-family:"Fraunces", Georgia, "Times New Roman", serif;
+        font-optical-sizing: auto;
+        letter-spacing: -0.01em;
+      }
+      .accent-underline::after{
+        content:"";display:block;margin:14px 0 0;
+        width:48px;height:3px;border-radius:2px;
+        background-color:var(--accent);
+      }
+    </style>
+  </head>
 
-    <h2 class="text-xl font-semibold mt-6 mb-2">Ångerrätt</h2>
-    <p class="mb-4">Eftersom medlemsinnehållet levereras digitalt direkt efter betalning avstår du enligt lag (2005:59) från 14 dagars ångerrätt.</p>
+  <body class="text-gray-900">
 
-    <h2 class="text-xl font-semibold mt-6 mb-2">Ansvar och innehåll</h2>
-    <p class="mb-4">Till Sängs ansvarar inte för tillfälliga driftavbrott eller problem orsakade av externa plattformar (t.ex. Spotify, Apple Podcasts eller Memberful). Innehållet får inte delas offentligt eller spridas vidare utan tillstånd.</p>
+    <!-- Header -->
+    <header class="sticky top-0 z-40 border-b border-gray-100 bg-white shadow-sm">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+        <a href="/" class="flex items-center gap-3 font-semibold">
+          <img src="cover.jpg" alt="Till Sängs omslag" width="36" height="36" class="h-9 w-9 object-cover border border-gray-200 shadow-sm">
+          <span class="text-gray-900">Till Sängs</span>
+        </a>
+        <a href="/" class="text-sm text-gray-600 hover:text-gray-900">← Tillbaka</a>
+      </div>
+    </header>
 
-    <h2 class="text-xl font-semibold mt-6 mb-2">Kontakt</h2>
-    <p>Frågor om ditt medlemskap? Kontakta oss på <a href="mailto:tillsangs@gmail.com" class="underline">tillsangs@gmail.com</a>.</p>
+    <main class="mx-auto max-w-3xl px-4 py-16">
 
-    <p class="mt-10 text-sm text-gray-500">Senast uppdaterad: November 2025</p>
-  </main>
-</body>
+      <h1 class="accent-underline text-4xl sm:text-5xl font-bold text-[var(--brand)] mb-10">
+        Allmänna villkor
+      </h1>
+
+      <div class="space-y-6 text-gray-700 leading-relaxed">
+
+        <p>
+          Dessa villkor gäller mellan <strong>Till Sängs</strong> och dig som medlem.
+          Genom att köpa ett medlemskap godkänner du dessa villkor.
+        </p>
+
+        <h2 class="text-2xl font-bold text-[var(--brand)] mt-10 mb-3">Medlemskap och betalning</h2>
+        <p>
+          Medlemskapet kostar 49 kr per månad och hanteras via Memberful/Stripe.
+          Ingen bindningstid. Du kan säga upp när som helst och tillgången avslutas
+          automatiskt när perioden löper ut.
+        </p>
+
+        <h2 class="text-2xl font-bold text-[var(--brand)] mt-10 mb-3">Ångerrätt</h2>
+        <p>
+          Eftersom medlemsinnehållet levereras digitalt direkt efter betalning avstår du
+          enligt lag (2005:59) från 14 dagars ångerrätt.
+        </p>
+
+        <h2 class="text-2xl font-bold text-[var(--brand)] mt-10 mb-3">Ansvar och innehåll</h2>
+        <p>
+          Till Sängs ansvarar inte för tillfälliga driftavbrott eller problem orsakade av
+          externa plattformar (t.ex. Spotify, Apple Podcasts eller Memberful). Innehållet
+          får inte delas offentligt eller spridas vidare utan tillstånd.
+        </p>
+
+        <h2 class="text-2xl font-bold text-[var(--brand)] mt-10 mb-3">Kontakt</h2>
+        <p>
+          Frågor om ditt medlemskap? Kontakta oss på
+          <a href="mailto:hej@tillsangs.se" class="underline text-[var(--accent)]">hej@tillsangs.se</a>.
+        </p>
+
+      </div>
+
+      <p class="mt-16 pt-8 border-t border-gray-200 text-sm text-gray-500">
+        Senast uppdaterad: april 2026.
+      </p>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-100 bg-gray-50 mt-16">
+      <div class="mx-auto max-w-6xl px-4 py-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs text-gray-500">
+        <p>© <span id="year"></span> Till Sängs</p>
+        <div class="flex gap-4">
+          <a href="integritet.html" class="hover:underline">Integritetspolicy</a>
+          <a href="cookies.html" class="hover:underline">Cookies</a>
+          <a href="villkor.html" class="hover:underline">Villkor</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
 </html>
