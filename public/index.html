@@ -145,7 +145,7 @@
         .step-thread::before{
           content:"";
           position:absolute;
-          top:calc(50% - 60px); /* ungefär höjd för numret */
+          top:calc(50% - 60px);
           left:16%; right:16%;
           height:0;
           border-top:2px dashed rgba(154,30,44,0.25);
@@ -190,31 +190,6 @@
   </head>
 
   <body class="text-gray-900">
-
-    <!-- Lösenordslås (TA BORT HELA DETTA SCRIPT VID LAUNCH) -->
-    <script>
-      const password = prompt("Skriv lösenord för att komma in:");
-      if (password !== "Bajen123!") {
-        document.write(`
-          <div style="
-            display:flex;
-            flex-direction:column;
-            align-items:center;
-            justify-content:center;
-            height:100vh;
-            background-color:#0F172A;
-            color:white;
-            font-family:Inter, sans-serif;
-            text-align:center;
-          ">
-            <img src='cover.jpg' alt='Till Sängs' style='width:160px; height:160px; border-radius:20px; margin-bottom:24px; object-fit:cover;'>
-            <h1 style='font-size:1.5rem; margin-bottom:8px;'>Till Sängs</h1>
-            <p>Webbplatsen är under uppbyggnad.<br>Återkom snart 💛</p>
-          </div>
-        `);
-        throw new Error("Fel lösenord");
-      }
-    </script>
 
     <!-- Header -->
     <header class="sticky top-0 z-40 border-b border-gray-100 bg-white shadow-sm">
