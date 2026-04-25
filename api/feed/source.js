@@ -15,17 +15,15 @@ module.exports = async (req, res) => {
     link: "https://www.tillsangs.se/",
     language: "sv-SE",
     description:
-      "Lyssna på Till Sängs i full längd utan reklam. Med Samanda Ekman & Malena Ivarsson. Medlemskap ger hela arkivet och alla nya avsnitt.",
+      "Med Samanda Ekman & Malena Ivarsson. Som medlem får du ett avsnitt varannan söndag plus sporadiska specialavsnitt – bara för medlemmar.",
     author: "Samanda Ekman & Malena Ivarsson",
     explicit: "false",
     image: "https://www.tillsangs.se/cover.jpg",
     ownerName: "Samanda Ekman",
-    ownerEmail: "info@tillsangs.com",
-
+    ownerEmail: "hej@tillsangs.se",
     // iTunes/Spotify-kategori (OBS: & ska vara &amp;)
     categoryTop: "Society &amp; Culture",
     categorySub: "Personal Journals",
-
     // Self-link för parser
     selfFeedUrl: "https://www.tillsangs.se/api/feed/source",
   };
@@ -39,7 +37,6 @@ module.exports = async (req, res) => {
         ? new Date(ep.published).toUTCString()
         : new Date().toUTCString();
       const guid = ep.id || `${Date.now()}`;
-
       const audioUrl = ep?.audio?.private_mp3 || "";
       const audioBytes = ep?.audio?.bytes || 0;
       const duration = ep?.audio?.duration || 0;
@@ -71,12 +68,10 @@ module.exports = async (req, res) => {
       <title><![CDATA[${CHANNEL.title}]]></title>
       <link>${CHANNEL.link}</link>
       <language>${CHANNEL.language}</language>
-
       <!-- Viktigt för vissa parser -->
       <atom:link href="${CHANNEL.selfFeedUrl}" rel="self" type="application/rss+xml"/>
       <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
       <itunes:type>episodic</itunes:type>
-
       <description><![CDATA[${CHANNEL.description}]]></description>
       <itunes:author><![CDATA[${CHANNEL.author}]]></itunes:author>
       <itunes:explicit>${CHANNEL.explicit}</itunes:explicit>
@@ -85,11 +80,9 @@ module.exports = async (req, res) => {
         <itunes:name>${CHANNEL.ownerName}</itunes:name>
         <itunes:email>${CHANNEL.ownerEmail}</itunes:email>
       </itunes:owner>
-
       <itunes:category text="${CHANNEL.categoryTop}">
         <itunes:category text="${CHANNEL.categorySub}" />
       </itunes:category>
-
       ${items}
     </channel>
   </rss>`;
