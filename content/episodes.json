@@ -119,7 +119,6 @@
       "duration": 0
     }
   },
-
   {
     "id": "tillsangs-2025-11-fanga-hett-villebrad",
     "title": "EP11 – Fånga hett villebråd",
@@ -577,13 +576,63 @@
     }
   },
   {
-  "id": "tillsangs-2025-52-livepodd-artipelag",
-  "title": "EP52 – LIVEPODD från Artipelags konstutställning om Picasso och hans musor",
-  "descriptionHtml": "<p></p>",
-  "published": "2025-12-11T09:00:00Z",
-  "image": "https://www.tillsangs.se/cover2.jpg",
-  "audio": {
-    "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/oit6umxlor2eb0r879000/EP52-LIVEPODD-fr-n-konstutst-llning-om-Picasso-och-hans-musor.mp3?rlkey=uh4jdo6knlt2rge3q6vfcn74q&dl=1"
+    "id": "tillsangs-2025-52-livepodd-artipelag",
+    "title": "EP52 – LIVEPODD från Artipelags konstutställning om Picasso och hans musor",
+    "descriptionHtml": "<p></p>",
+    "published": "2025-12-11T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover2.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/oit6umxlor2eb0r879000/EP52-LIVEPODD-fr-n-konstutst-llning-om-Picasso-och-hans-musor.mp3?rlkey=uh4jdo6knlt2rge3q6vfcn74q&dl=1"
+    }
+  },
+  {
+    "id": "tillsangs-2026-53-tre-kriser-och-ett-brollop",
+    "title": "EP53 – Tre kriser och ett bröllop",
+    "descriptionHtml": "<p></p>",
+    "published": "2026-02-15T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover2.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/g22iggl20xm1oy84ov2v0/EP53-Tre-kriser-och-ett-br-llop.mp3?rlkey=93uuyhcm2ez2d5f5twq0r5u4i&dl=1"
+    }
+  },
+  {
+    "id": "tillsangs-2026-54-mingelarketypen",
+    "title": "EP54 – Mingelarketypen",
+    "descriptionHtml": "<p></p>",
+    "published": "2026-03-01T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover2.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/kn0bzyzjc4cobgxm3o4sw/EP54-Mingelarketypen.mp3?rlkey=znd3rvwxoefnaklwg8bh511i7&dl=1"
+    }
+  },
+  {
+    "id": "tillsangs-2026-55-nakenbild-pa-auktion",
+    "title": "EP55 – Nakenbild på auktion",
+    "descriptionHtml": "<p></p>",
+    "published": "2026-03-15T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover2.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/mnhudinaw6dor3i00z0ra/EP55-Nakenbild-p-auktion.mp3?rlkey=vely3z7oyhhpe7f0dx2r9xgfo&dl=1"
+    }
+  },
+  {
+    "id": "tillsangs-2026-56-basta-bikten",
+    "title": "EP56 – Bästa bikten",
+    "descriptionHtml": "<p></p>",
+    "published": "2026-03-29T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover2.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/ld2e1yi231j96bsap49du/EP56-B-sta-bikten.mp3?rlkey=3dzlianuab7u2ffuohxo0dl8d&dl=1"
+    }
+  },
+  {
+    "id": "tillsangs-2026-57-frater-mysticus-soror-mystica",
+    "title": "EP57 – Frater mysticus & Soror mystica",
+    "descriptionHtml": "<p></p>",
+    "published": "2026-04-12T09:00:00Z",
+    "image": "https://www.tillsangs.se/cover2.jpg",
+    "audio": {
+      "private_mp3": "https://dl.dropboxusercontent.com/scl/fi/jegad8lk7x1smjcrtkj1l/EP57-Frater-mysticus-Soror-mystica.mp3?rlkey=42mbokgscizd96xh3fn72j5qp&dl=1"
+    }
   }
-}
 ]
