@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Till Sängs – Medlemskap</title>
-    <meta name="description" content="Full tillgång till alla avsnitt och specialavsnitt. 49 kr/mån, ingen bindningstid." />
+    <meta name="description" content="Full tillgång till alla avsnitt och specialavsnitt. En egen medlemsfeed i din podcast-app. 49 kr/mån, ingen bindningstid." />
 
     <link rel="canonical" href="https://www.tillsangs.se/" />
     <link rel="icon" type="image/jpeg" href="/cover.jpg" />
@@ -15,7 +15,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <meta property="og:title" content="Till Sängs – Medlemskap" />
-    <meta property="og:description" content="Full tillgång till alla avsnitt och specialavsnitt. 49 kr/mån, ingen bindningstid." />
+    <meta property="og:description" content="Full tillgång till alla avsnitt och specialavsnitt. En egen medlemsfeed i din podcast-app. 49 kr/mån, ingen bindningstid." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.tillsangs.se/" />
     <meta property="og:image" content="https://www.tillsangs.se/cover.jpg" />
@@ -23,7 +23,7 @@
     <meta property="og:image:height" content="3000" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Till Sängs – Medlemskap" />
-    <meta name="twitter:description" content="Full tillgång till alla avsnitt och specialavsnitt. 49 kr/mån, ingen bindningstid." />
+    <meta name="twitter:description" content="Full tillgång till alla avsnitt och specialavsnitt. En egen medlemsfeed i din podcast-app. 49 kr/mån, ingen bindningstid." />
     <meta name="twitter:image" content="https://www.tillsangs.se/cover.jpg" />
 
     <meta name="theme-color" content="#0F172A"/>
@@ -34,6 +34,8 @@
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
+        {"@type":"Question","name":"Hur fungerar medlemsfeeden?","acceptedAnswer":{"@type":"Answer","text":"Som medlem får du en egen medlemsfeed som hamnar i din podcast-app när du valt app i steg 2. I medlemsfeeden ligger alla avsnitt samlade – vanliga avsnitt, medlemsavsnitt och specialavsnitt. Du behöver inte växla mellan olika feeder."}},
+        {"@type":"Question","name":"Mitt nya avsnitt har inte dykt upp än – vad gör jag?","acceptedAnswer":{"@type":"Answer","text":"Podcast-appar uppdaterar feeden med olika hastighet. Spotify brukar dyka upp inom någon timme, Apple Podcasts kan ta upp till ett dygn. Du kan tvinga en uppdatering genom att dra neråt på poddens sida i appen, eller genom att stänga och öppna appen igen."}},
         {"@type":"Question","name":"Vad ingår i medlemskapet?","acceptedAnswer":{"@type":"Answer","text":"Som medlem får du full tillgång till alla avsnitt och specialavsnitt. Som gratislyssnare är vartannat avsnitt inlåst."}},
         {"@type":"Question","name":"Hur aktiverar jag podden efter köp?","acceptedAnswer":{"@type":"Answer","text":"När betalningen är klar kommer du till sidan 'Beställningen är klar!'. Under steg 2 – Välj app väljer du t.ex. Spotify eller Apple Podcasts och aktiverar podden på ditt konto. När podden dykt upp i din app behöver du också trycka på Följ eller Prenumerera för att den ska sparas. Om du råkar stänga sidan: logga in på Mitt medlemskap, välj app där och följ anvisningarna igen."}},
         {"@type":"Question","name":"Fungerar det i Spotify?","acceptedAnswer":{"@type":"Answer","text":"Ja. Vi använder Spotifys Open Access. På sidan 'Beställningen är klar!' eller via Mitt medlemskap väljer du Spotify och kopplar ditt Spotify-konto. Därefter dyker podden upp låst till ditt konto i Spotify-appen. Kom ihåg att trycka på Följ/Follow-knappen under omslaget, annars sparas den inte."}},
@@ -115,19 +117,13 @@
       .lift{transition: transform .2s ease, box-shadow .2s ease;}
       .lift:hover{transform: translateY(-2px);}
 
-      /* Dölj default-triangel i FAQ */
-      details summary{
-        list-style: none;
-      }
-      details summary::-webkit-details-marker{
-        display: none;
-      }
+      details summary{ list-style: none; }
+      details summary::-webkit-details-marker{ display: none; }
       details summary .plus-icon{
         color: var(--accent);
         font-weight: 300;
       }
 
-      /* Benefits-lista i hero */
       .benefit-list{
         display:flex;
         flex-direction:column;
@@ -136,13 +132,15 @@
       }
       .benefit-item{
         display:flex;
-        align-items:center;
+        align-items:flex-start;
         gap:10px;
         font-size:1rem;
         color:#1F2937;
+        line-height:1.5;
       }
       .benefit-check{
         flex-shrink:0;
+        margin-top:2px;
         display:inline-flex;
         align-items:center;
         justify-content:center;
@@ -154,7 +152,26 @@
       }
       .benefit-check svg{width:13px;height:13px;}
 
-      /* App-rad: Spotify + Apple Podcasts */
+      .help-card{
+        margin-top:1.5rem;
+        padding:1rem 1.25rem;
+        background:rgba(250,204,21,0.10);
+        border:1px solid rgba(154,30,44,0.18);
+        border-left:3px solid var(--accent);
+        border-radius:0 12px 12px 0;
+      }
+      .help-card p{
+        margin:0;
+        font-size:0.95rem;
+        color:#1F2937;
+        line-height:1.55;
+      }
+      .help-card a{
+        color:var(--accent);
+        font-weight:600;
+        text-decoration:underline;
+      }
+
       .app-pill{
         display:inline-flex;
         align-items:center;
@@ -171,10 +188,7 @@
       }
       .app-pill svg{flex-shrink:0;}
 
-      /* Steg-tråd: prickad linje mellan stegen */
-      .step-thread{
-        position:relative;
-      }
+      .step-thread{ position:relative; }
       @media (min-width: 640px){
         .step-thread::before{
           content:"";
@@ -195,7 +209,51 @@
         border:3px solid var(--bg);
       }
 
-      /* Sticky mobil-CTA */
+      .member-section{
+        background: linear-gradient(180deg, white 0%, #FAFAF9 100%);
+      }
+      .member-card{
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        text-align:left;
+        padding:1.25rem;
+        background:white;
+        border:1px solid rgba(15,23,42,0.10);
+        border-radius:1rem;
+        transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+        height:100%;
+      }
+      .member-card:hover{
+        transform:translateY(-2px);
+        box-shadow:0 10px 25px -10px rgba(0,0,0,0.15);
+        border-color:rgba(154,30,44,0.3);
+      }
+      .member-card .icon-wrap{
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:42px;
+        height:42px;
+        border-radius:9999px;
+        background:rgba(154,30,44,0.08);
+        color:var(--accent);
+        margin-bottom:0.85rem;
+      }
+      .member-card h3{
+        font-family:Inter, sans-serif;
+        font-size:1rem;
+        font-weight:600;
+        color:var(--brand);
+        margin-bottom:0.25rem;
+      }
+      .member-card p{
+        font-size:0.85rem;
+        color:#4B5563;
+        line-height:1.45;
+        margin:0;
+      }
+
       .sticky-mobile-cta{
         position: fixed;
         left: 0; right: 0; bottom: 0;
@@ -235,6 +293,7 @@
 
         <nav class="hidden items-center gap-6 text-sm md:flex">
           <a href="#kom-igang" class="hover:text-gray-900 text-gray-600">Kom igång</a>
+          <a href="#mitt-medlemskap" class="hover:text-gray-900 text-gray-600">Mitt medlemskap</a>
           <a href="#sa-funkar-det" class="hover:text-gray-900 text-gray-600">Så funkar det</a>
           <a href="#faq" class="hover:text-gray-900 text-gray-600">Frågor</a>
           <a href="#kontakt" class="hover:text-gray-900 text-gray-600">Kontakt</a>
@@ -259,10 +318,11 @@
              class="hidden absolute left-0 right-0 top-full z-50 md:hidden bg-white border-t border-gray-200 shadow-lg">
           <div class="mx-auto max-w-6xl px-4 py-4 flex flex-col gap-4 text-sm">
             <a href="#kom-igang" class="hover:text-gray-900 text-gray-700">Kom igång</a>
+            <a href="#mitt-medlemskap" class="hover:text-gray-900 text-gray-700">Mitt medlemskap</a>
             <a href="#sa-funkar-det" class="hover:text-gray-900 text-gray-700">Så funkar det</a>
             <a href="#faq" class="hover:text-gray-900 text-gray-700">Frågor</a>
             <a href="#kontakt" class="hover:text-gray-900 text-gray-700">Kontakt</a>
-            <a href="https://medlem.tillsangs.se/account" target="_blank" rel="noopener" class="text-gray-700">Mitt medlemskap</a>
+            <a href="https://medlem.tillsangs.se/account" target="_blank" rel="noopener" class="text-gray-700 font-semibold">Logga in på Mitt medlemskap</a>
             <a href="https://medlem.tillsangs.se/checkout?plan=141108" target="_blank" rel="noopener"
                class="rounded-full bg-[var(--brand)] px-4 py-2 font-semibold text-white text-center hover:bg-black">
                Bli medlem
@@ -314,6 +374,12 @@
               </span>
               <span>Specialavsnitt bara för medlemmar</span>
             </li>
+            <li class="benefit-item">
+              <span class="benefit-check" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <span>En egen medlemsfeed som hamnar i din podcast-app</span>
+            </li>
           </ul>
 
           <p class="mt-4 text-sm text-gray-500" style="font-family:Inter">
@@ -334,6 +400,14 @@
                class="text-center sm:text-left text-base font-semibold text-gray-700 underline underline-offset-4 decoration-gray-300 hover:decoration-gray-600 py-2 sm:py-0">
               Så funkar det →
             </a>
+          </div>
+
+          <!-- Hjälp-ruta -->
+          <div class="help-card">
+            <p>
+              Krångligt? Kolla instruktionerna nedan eller mejla oss på
+              <a href="mailto:hej@tillsangs.se">hej@tillsangs.se</a> så hjälper vi dig.
+            </p>
           </div>
 
           <!-- App-rad direkt under CTA -->
@@ -366,6 +440,72 @@
               </span>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mitt medlemskap -->
+    <section id="mitt-medlemskap" class="member-section border-t border-gray-100">
+      <div class="mx-auto max-w-5xl px-4 py-16">
+        <div class="fade-in mx-auto max-w-3xl text-center">
+          <h2 class="accent-underline text-3xl sm:text-4xl font-bold text-[var(--brand)]">Mitt medlemskap</h2>
+          <p class="mt-5 text-gray-600">
+            Här loggar du in för att hantera ditt konto. Är du redan medlem? Då gör du allt här.
+          </p>
+          <a href="https://medlem.tillsangs.se/account"
+             target="_blank" rel="noopener"
+             class="lift mt-6 inline-flex items-center gap-2 rounded-full bg-[var(--brand)] px-6 py-3 text-base font-semibold text-white shadow-lg hover:bg-black hover:shadow-xl">
+            Logga in på Mitt medlemskap →
+          </a>
+        </div>
+
+        <div class="fade-in mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+          <a href="https://medlem.tillsangs.se/account" target="_blank" rel="noopener" class="member-card">
+            <span class="icon-wrap" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H4a1 1 0 0 1-1-1v-6a9 9 0 0 1 18 0v6a1 1 0 0 1-1 1h-2a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/>
+              </svg>
+            </span>
+            <h3>Välj app</h3>
+            <p>Byt mellan Spotify, Apple Podcasts eller annan podcast-app.</p>
+          </a>
+
+          <a href="https://medlem.tillsangs.se/account/credit_card/edit" target="_blank" rel="noopener" class="member-card">
+            <span class="icon-wrap" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="14" x="2" y="5" rx="2"/>
+                <line x1="2" x2="22" y1="10" y2="10"/>
+              </svg>
+            </span>
+            <h3>Uppdatera betalkort</h3>
+            <p>Om ditt kort gått ut eller om du vill byta betalsätt.</p>
+          </a>
+
+          <a href="https://medlem.tillsangs.se/account/orders" target="_blank" rel="noopener" class="member-card">
+            <span class="icon-wrap" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/>
+                <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/>
+                <path d="M12 17.5v-11"/>
+              </svg>
+            </span>
+            <h3>Hitta kvitton</h3>
+            <p>Alla dina betalningar och kvitton samlade på ett ställe.</p>
+          </a>
+
+          <a href="https://medlem.tillsangs.se/account/subscriptions" target="_blank" rel="noopener" class="member-card">
+            <span class="icon-wrap" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+                <polyline points="16 17 21 12 16 7"/>
+                <line x1="21" x2="9" y1="12" y2="12"/>
+              </svg>
+            </span>
+            <h3>Avsluta</h3>
+            <p>Säg upp när du vill. Ingen bindningstid.</p>
+          </a>
+
         </div>
       </div>
     </section>
@@ -422,14 +562,13 @@
             <h3 class="text-xl font-semibold">Börja lyssna</h3>
           </div>
           <p class="mt-2 text-base text-gray-600">
-            Full tillgång till alla avsnitt och specialavsnitt.
-            När podden dykt upp i din app – kom ihåg att trycka på
-            <strong>Följ</strong> eller <strong>Prenumerera</strong> så att den sparas i ditt bibliotek.
+            Din egna medlemsfeed dyker upp i appen med alla avsnitt samlade.
+            Kom ihåg att trycka på <strong>Följ</strong> eller <strong>Prenumerera</strong>
+            så att den sparas i ditt bibliotek.
           </p>
         </li>
       </ol>
 
-      <!-- App-block efter stegen -->
       <div class="fade-in mt-16 rounded-3xl bg-white border border-gray-200 px-6 py-8 sm:py-10 text-center shadow-sm">
         <p class="text-xs uppercase tracking-wider font-semibold text-gray-500 mb-2" style="font-family:Inter">
           Lyssna där du redan lyssnar
@@ -510,11 +649,38 @@
     </section>
 
     <!-- FAQ -->
-    <section id="faq" class="mx-auto max-w-4xl px-4 py-16 order-1 md:order-none">
+    <section id="faq" class="mx-auto max-w-4xl px-4 py-16">
       <div class="fade-in mx-auto max-w-2xl text-center">
         <h2 class="accent-underline text-3xl sm:text-4xl font-bold tracking-tight text-[var(--brand)]">Frågor</h2>
       </div>
       <div class="fade-in mt-10 space-y-3">
+
+        <details class="group rounded-2xl border border-gray-200 bg-white p-5 transition hover:border-gray-300">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-2 text-base font-semibold">
+            Hur fungerar medlemsfeeden?
+            <span class="plus-icon text-2xl transition group-open:rotate-45">＋</span>
+          </summary>
+          <p class="mt-3 text-sm text-gray-600">
+            Som medlem får du en <strong>egen medlemsfeed</strong> som hamnar i din podcast-app
+            när du valt app i steg 2. I medlemsfeeden ligger
+            <strong>alla avsnitt samlade</strong> – vanliga avsnitt, medlemsavsnitt och specialavsnitt.
+            Du behöver inte växla mellan olika feeder.
+          </p>
+        </details>
+
+        <details class="group rounded-2xl border border-gray-200 bg-white p-5 transition hover:border-gray-300">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-2 text-base font-semibold">
+            Mitt nya avsnitt har inte dykt upp än – vad gör jag?
+            <span class="plus-icon text-2xl transition group-open:rotate-45">＋</span>
+          </summary>
+          <p class="mt-3 text-sm text-gray-600">
+            Podcast-appar uppdaterar feeden med olika hastighet. Spotify brukar dyka upp inom någon timme,
+            Apple Podcasts kan ta upp till ett dygn. Du kan tvinga en uppdatering så här:
+            <br><br>
+            <strong>Spotify:</strong> Stäng appen helt och öppna igen, eller dra neråt på poddens sida.<br>
+            <strong>Apple Podcasts:</strong> Gå in på Till Sängs och dra neråt på avsnittslistan för att tvinga refresh. Stäng och öppna appen om det inte funkar.
+          </p>
+        </details>
 
         <details class="group rounded-2xl border border-gray-200 bg-white p-5 transition hover:border-gray-300">
           <summary class="flex cursor-pointer list-none items-center justify-between gap-2 text-base font-semibold">
@@ -609,51 +775,6 @@
             Kolla skräppost/Kampanjer om du vill spara kvittot.
           </p>
         </details>
-      </div>
-    </section>
-
-    <!-- Mitt medlemskap -->
-    <section class="border-t border-gray-100 bg-white">
-      <div class="mx-auto max-w-4xl px-4 py-16">
-        <div class="fade-in text-center">
-          <h2 class="accent-underline text-3xl sm:text-4xl font-bold text-[var(--brand)]">Mitt medlemskap</h2>
-          <p class="mt-5 text-gray-600">Hantera ditt konto, betalning och lyssning.</p>
-        </div>
-        <div class="fade-in mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
-          <a href="https://medlem.tillsangs.se/account"
-             class="lift flex flex-col items-center rounded-2xl border border-gray-200 bg-[var(--bg)] p-6 hover:shadow-md hover:border-gray-300">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-[var(--accent)]" aria-hidden="true">
-              <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H4a1 1 0 0 1-1-1v-6a9 9 0 0 1 18 0v6a1 1 0 0 1-1 1h-2a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/>
-            </svg>
-            <span class="text-sm font-semibold">Välj app</span>
-          </a>
-          <a href="https://medlem.tillsangs.se/account/credit_card/edit"
-             class="lift flex flex-col items-center rounded-2xl border border-gray-200 bg-[var(--bg)] p-6 hover:shadow-md hover:border-gray-300">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-[var(--accent)]" aria-hidden="true">
-              <rect width="20" height="14" x="2" y="5" rx="2"/>
-              <line x1="2" x2="22" y1="10" y2="10"/>
-            </svg>
-            <span class="text-sm font-semibold">Betalkort</span>
-          </a>
-          <a href="https://medlem.tillsangs.se/account/orders"
-             class="lift flex flex-col items-center rounded-2xl border border-gray-200 bg-[var(--bg)] p-6 hover:shadow-md hover:border-gray-300">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-[var(--accent)]" aria-hidden="true">
-              <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/>
-              <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/>
-              <path d="M12 17.5v-11"/>
-            </svg>
-            <span class="text-sm font-semibold">Kvitton</span>
-          </a>
-          <a href="https://medlem.tillsangs.se/account/subscriptions"
-             class="lift flex flex-col items-center rounded-2xl border border-gray-200 bg-[var(--bg)] p-6 hover:shadow-md hover:border-gray-300">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-[var(--accent)]" aria-hidden="true">
-              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
-              <polyline points="16 17 21 12 16 7"/>
-              <line x1="21" x2="9" y1="12" y2="12"/>
-            </svg>
-            <span class="text-sm font-semibold">Avsluta</span>
-          </a>
-        </div>
       </div>
     </section>
 
