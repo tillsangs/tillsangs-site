@@ -35,7 +35,7 @@
       "@type": "FAQPage",
       "mainEntity": [
         {"@type":"Question","name":"Hur fungerar medlemsfeeden?","acceptedAnswer":{"@type":"Answer","text":"Som medlem får du en egen medlemsfeed som hamnar i din podcast-app när du valt app i steg 2. I medlemsfeeden ligger alla avsnitt samlade – vanliga avsnitt, medlemsavsnitt och specialavsnitt. Du behöver inte växla mellan olika feeder."}},
-        {"@type":"Question","name":"Mitt nya avsnitt har inte dykt upp än – vad gör jag?","acceptedAnswer":{"@type":"Answer","text":"Podcast-appar uppdaterar feeden med olika hastighet. Spotify brukar dyka upp inom någon timme, Apple Podcasts kan ta upp till ett dygn. Du kan tvinga en uppdatering genom att dra neråt på poddens sida i appen, eller genom att stänga och öppna appen igen."}},
+        {"@type":"Question","name":"Mitt nya avsnitt har inte dykt upp än – vad gör jag?","acceptedAnswer":{"@type":"Answer","text":"Dra neråt på poddens sida i appen för att uppdatera feeden, eller stäng och öppna appen igen. Då dyker det nya avsnittet upp."}},
         {"@type":"Question","name":"Vad ingår i medlemskapet?","acceptedAnswer":{"@type":"Answer","text":"Som medlem får du full tillgång till alla avsnitt och specialavsnitt. Som gratislyssnare är vartannat avsnitt inlåst."}},
         {"@type":"Question","name":"Hur aktiverar jag podden efter köp?","acceptedAnswer":{"@type":"Answer","text":"När betalningen är klar kommer du till sidan 'Beställningen är klar!'. Under steg 2 – Välj app väljer du t.ex. Spotify eller Apple Podcasts och aktiverar podden på ditt konto. När podden dykt upp i din app behöver du också trycka på Följ eller Prenumerera för att den ska sparas. Om du råkar stänga sidan: logga in på Mitt medlemskap, välj app där och följ anvisningarna igen."}},
         {"@type":"Question","name":"Fungerar det i Spotify?","acceptedAnswer":{"@type":"Answer","text":"Ja. Vi använder Spotifys Open Access. På sidan 'Beställningen är klar!' eller via Mitt medlemskap väljer du Spotify och kopplar ditt Spotify-konto. Därefter dyker podden upp låst till ditt konto i Spotify-appen. Kom ihåg att trycka på Följ/Follow-knappen under omslaget, annars sparas den inte."}},
@@ -254,6 +254,76 @@
         margin:0;
       }
 
+      /* Mobil-banner: "Logga in på Mitt medlemskap" */
+      .mobile-member-banner{
+        display:flex;
+        align-items:center;
+        gap:10px;
+        padding:11px 16px;
+        background:white;
+        border-bottom:1px solid rgba(15,23,42,0.08);
+        font-family:Inter,sans-serif;
+        font-size:14px;
+        font-weight:600;
+        color:var(--brand);
+        text-decoration:none;
+        position:sticky;
+        top:60px;
+        z-index:30;
+      }
+      .mobile-member-banner svg{
+        color:var(--accent);
+        flex-shrink:0;
+      }
+      .mobile-member-banner .arrow{
+        margin-left:auto;
+        color:var(--accent);
+        font-weight:700;
+      }
+      @media (min-width: 768px){
+        .mobile-member-banner{display:none;}
+      }
+
+      /* Refresh-banner mellan Mitt medlemskap och Så funkar det */
+      .refresh-banner{
+        background: rgba(250,204,21,0.12);
+        border-top: 1px solid rgba(154,30,44,0.15);
+        border-bottom: 1px solid rgba(154,30,44,0.15);
+      }
+      .refresh-banner-inner{
+        max-width: 56rem;
+        margin: 0 auto;
+        padding: 1.25rem 1rem;
+        display:flex;
+        gap:14px;
+        align-items:flex-start;
+      }
+      .refresh-banner-icon{
+        flex-shrink:0;
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:9999px;
+        background:rgba(154,30,44,0.10);
+        color:var(--accent);
+        margin-top:2px;
+      }
+      .refresh-banner-text strong{
+        display:block;
+        font-family:"Fraunces", Georgia, serif;
+        font-size:1.1rem;
+        color:var(--brand);
+        margin-bottom:4px;
+      }
+      .refresh-banner-text p{
+        margin:0;
+        font-size:0.9rem;
+        color:#374151;
+        line-height:1.5;
+      }
+
       .sticky-mobile-cta{
         position: fixed;
         left: 0; right: 0; bottom: 0;
@@ -331,6 +401,16 @@
         </div>
       </div>
     </header>
+
+    <!-- Mobil-banner: synlig direkt under header på mobil -->
+    <a href="#mitt-medlemskap" class="mobile-member-banner">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+        <circle cx="12" cy="7" r="4"/>
+      </svg>
+      <span>Är du redan medlem? Logga in</span>
+      <span class="arrow">↓</span>
+    </a>
 
     <!-- Hero -->
     <section id="kom-igang" class="hero-glow relative overflow-hidden bg-[var(--bg)]">
@@ -450,7 +530,8 @@
         <div class="fade-in mx-auto max-w-3xl text-center">
           <h2 class="accent-underline text-3xl sm:text-4xl font-bold text-[var(--brand)]">Mitt medlemskap</h2>
           <p class="mt-5 text-gray-600">
-            Här loggar du in för att hantera ditt konto. Är du redan medlem? Då gör du allt här.
+            Är du redan medlem? Här loggar du in för att hantera ditt konto.
+            Här kan du <strong>byta podcast-app, uppdatera ditt betalkort, hitta dina kvitton eller säga upp medlemskapet</strong> – allt på ett ställe.
           </p>
           <a href="https://medlem.tillsangs.se/account"
              target="_blank" rel="noopener"
@@ -509,6 +590,24 @@
         </div>
       </div>
     </section>
+
+    <!-- Refresh-banner -->
+    <div class="refresh-banner">
+      <div class="refresh-banner-inner">
+        <span class="refresh-banner-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
+            <path d="M21 3v5h-5"/>
+            <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/>
+            <path d="M8 16H3v5"/>
+          </svg>
+        </span>
+        <div class="refresh-banner-text">
+          <strong>Saknar du ett avsnitt?</strong>
+          <p>Dra neråt på poddens sida i appen för att uppdatera feeden, eller stäng och öppna appen igen. Då dyker det nya avsnittet upp.</p>
+        </div>
+      </div>
+    </div>
 
     <!-- Så funkar det -->
     <section id="sa-funkar-det" class="mx-auto max-w-5xl px-4 py-16">
@@ -674,11 +773,8 @@
             <span class="plus-icon text-2xl transition group-open:rotate-45">＋</span>
           </summary>
           <p class="mt-3 text-sm text-gray-600">
-            Podcast-appar uppdaterar feeden med olika hastighet. Spotify brukar dyka upp inom någon timme,
-            Apple Podcasts kan ta upp till ett dygn. Du kan tvinga en uppdatering så här:
-            <br><br>
-            <strong>Spotify:</strong> Stäng appen helt och öppna igen, eller dra neråt på poddens sida.<br>
-            <strong>Apple Podcasts:</strong> Gå in på Till Sängs och dra neråt på avsnittslistan för att tvinga refresh. Stäng och öppna appen om det inte funkar.
+            Dra neråt på poddens sida i appen för att uppdatera feeden, eller stäng och öppna appen igen.
+            Då dyker det nya avsnittet upp.
           </p>
         </details>
 
